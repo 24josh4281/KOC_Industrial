@@ -1,0 +1,18 @@
+{
+  "date": "2026-10-13",
+  "change": "InnerCarry dashboard readability and drilldowns",
+  "python_tests": 30,
+  "node_tests": 15,
+  "existing_snapshot_comparisons": 96,
+  "deadline_snapshot_comparisons": 12,
+  "kpi_drilldown_conditions": 45,
+  "react_build": "passed",
+  "aggregation_contract_changed": false,
+  "offline_preview_changed": false,
+  "excel_sha256": "00aacb4ae59972fe851c8a1b17d1e8c9483e6f672880e2a87e0ecb56b55b381d",
+  "private_input_published": false,
+  "reference_images_published": false,
+  "remote_ci": "See the commit workflow result",
+  "browser_verification": "Pending public build verification",
+  "not_implemented": ["DB connection", "real-time sync", "automatic email or SMS"]
+}
