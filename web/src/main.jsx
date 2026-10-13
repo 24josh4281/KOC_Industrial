@@ -9,6 +9,8 @@ import demo from './demo.json';
 import empty from '../../data/templates/empty.dataset.json';
 import './dashboard.css';
 import PublicDashboard from './PublicDashboard.jsx';
+import MaterialsDashboard from './MaterialsDashboard.jsx';
+import Reports from './Reports.jsx';
 
 const qc=new QueryClient();
 const EXCEL='./downloads/KETS_Methodology_Dashboard.xlsx';
@@ -63,4 +65,6 @@ function App() {
     </main>
   </div>;
 }
-createRoot(document.getElementById('root')).render(<QueryClientProvider client={qc}>{new URLSearchParams(location.search).get('view')==='template'?<><a className="button" href="./">공개 실자료 분석으로 돌아가기</a><App/></>:<PublicDashboard/>}</QueryClientProvider>);
+const view=new URLSearchParams(location.search).get('view');
+const screen=view==='materials'||(document.getElementById('local-materials-data')&&!view)?<MaterialsDashboard/>:view==='manual'||view==='insights'?<Reports type={view}/>:view==='template'?<><a className="button" href="?view=public">공개 실자료 분석으로 돌아가기</a><App/></>:<PublicDashboard/>;
+createRoot(document.getElementById('root')).render(<QueryClientProvider client={qc}>{screen}</QueryClientProvider>);

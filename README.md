@@ -16,6 +16,8 @@
 
 ## 기능과 구현 상태
 
+새 검토 기능은 `design.json`의 이너젠·공단 참고형·KRDS 참고형으로 표시 방식을 전환한다. `?view=insights`는 공개 인사이트, `?view=manual`은 사용 설명서, `?view=materials`는 로컬 자료를 읽는 범용 화면이다. [사용 설명서 PDF](docs/KETS_Dashboard_Manual_20261014.pdf)와 [디자인 명세](design.md)를 함께 제공한다. 내부 자료·내부 보고서는 공개 저장소에 포함하지 않는다. 이번 변경의 실제 배포 여부는 [구현 상태](docs/08_IMPLEMENTATION_STATUS.md)를 확인한다.
+
 | 기능 | 상태 |
 |---|---|
 | ORS 공개 이력·출처 연결 / 실자료 33개 코드·40개 버전 | 구현·공개 확인분 |

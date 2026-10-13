@@ -1,0 +1,13 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"Local source review, not a production dataset",
+  "type":"object",
+  "required":["catalog_version","captured_on","access","files","sheets","applications","history","issues","summary"],
+  "properties":{
+    "catalog_version":{"const":"local-materials-1.0"},"captured_on":{"type":"string","format":"date"},"access":{"const":"internal"},
+    "files":{"type":"array","items":{"type":"object","required":["id","filename","sha256","format"],"properties":{"id":{"type":"string"},"filename":{"type":"string"},"sha256":{"type":"string","pattern":"^[0-9a-f]{64}$"},"format":{"enum":["xlsx","xls"]}}}},
+    "sheets":{"type":"array","items":{"type":"object","required":["id","source_id","name","rows","columns","category","cached_error_count"],"properties":{"id":{"type":"string"},"source_id":{"type":"string"},"name":{"type":"string"},"category":{"type":"string"},"cached_error_count":{"type":"integer","minimum":0},"columns":{"type":"array"},"rows":{"type":"array","items":{"type":"object","required":["row","cells"],"properties":{"row":{"type":"integer","minimum":1},"cells":{"type":"array","items":{"type":"object","required":["col","value"],"properties":{"col":{"type":"integer","minimum":1},"formula":{"type":"string"},"error":{"type":"boolean"}}}}}}}}}},
+    "applications":{"type":"array","items":{"type":"object","required":["id","title","type_conflict","confirmed_type"],"properties":{"type_conflict":{"type":"boolean"},"confirmed_type":{"type":["string","null"]}}}},
+    "history":{"type":"array"},"issues":{"type":"array"},"summary":{"type":"object"}
+  }
+}
