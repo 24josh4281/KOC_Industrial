@@ -26,6 +26,8 @@ jobs:
         working-directory: web
       - run: npm run build
         working-directory: web
+      - run: python scripts/stage_public_site.py
+      - run: git diff --exit-code -- index.html assets downloads .nojekyll
       - uses: actions/upload-artifact@v4
         with:
           name: excel-and-web
