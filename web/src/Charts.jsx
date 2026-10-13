@@ -16,7 +16,7 @@ export function AnnualChart({snapshot:s,onYear}) {
   const annual=useMemo(()=>period==='all'?s.annual:s.annual.slice(-5),[s.annual,period]);
   const missing=s.metadata.coverage.registrations==='missing';
   const option=useMemo(()=>({
-    animationDuration:300,aria:{enabled:true},textStyle:{fontFamily:'IBM Plex Sans KR, Malgun Gothic, sans-serif',color:'#475569'},
+    animationDuration:300,aria:{enabled:true,description:(mode==='registration'?'연도별 신규 방법론과 등록연도 확인분 누적. ':'연도별 개정 버전. ')+annual.map(r=>mode==='registration'?`${r.year}년 신규 ${r.new}개, 누적 ${r.cumulative_known_year}개`:`${r.year}년 개정 ${r.revisions}버전`).join('. ')},textStyle:{fontFamily:'IBM Plex Sans KR, Malgun Gothic, sans-serif',color:'#475569'},
     tooltip:{trigger:'axis',renderMode:'richText',backgroundColor:'#0B1739',borderWidth:0,textStyle:{color:'#fff'},axisPointer:{type:'shadow'}},
     legend:{bottom:0,left:8,itemWidth:12,itemHeight:8,textStyle:{fontSize:12,color:'#475569'}},
     grid:{left:42,right:20,top:28,bottom:64},

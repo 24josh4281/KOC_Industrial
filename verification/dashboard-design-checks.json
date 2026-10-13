@@ -13,6 +13,9 @@
   "private_input_published": false,
   "reference_images_published": false,
   "remote_ci": "See the commit workflow result",
-  "browser_verification": "Pending public build verification",
+  "browser_verification": "Passed on public Pages build 48245c4: desktop 1440x900 and mobile 390x844",
+  "browser_checks": ["missing values", "demo KPI values", "revision chart", "year selection", "KPI and stage drilldown", "exact technology filter", "history dialog", "Escape close", "unknown registration preserved", "filtered CSV downloaded and read back", "no mobile page overflow"],
+  "downloaded_csv_rows": 3,
+  "deployment_run": 38393123917,
   "not_implemented": ["DB connection", "real-time sync", "automatic email or SMS"]
 }
