@@ -4,7 +4,7 @@
 
 ## 바로 확인
 
-- [웹 대시보드](https://24josh4281.github.io/KOC_Industrial/) — Pages 배포 성공 후 접속
+- [웹 대시보드](https://24josh4281.github.io/KOC_Industrial/)
 - [엑셀 대시보드 다운로드](https://github.com/24josh4281/KOC_Industrial/raw/refs/heads/main/excel/KETS_Methodology_Dashboard.xlsx)
 - [전체 코드 및 파일 다운로드](https://github.com/24josh4281/KOC_Industrial/archive/refs/heads/main.zip)
 - [빌드·배포 실행 상태](https://github.com/24josh4281/KOC_Industrial/actions)
@@ -57,5 +57,7 @@ npm run dev
 ```
 
 검증: `python -m unittest discover -s tests -v`, `node --test tests/web.test.mjs`, `npm run build` (web 폴더).
+
+공개 웹 갱신 시 `web` 폴더에서 `npm run build`를 실행한 다음, 저장소 루트에서 `python scripts/stage_public_site.py`를 실행합니다. 생성된 `index.html`, `assets`, `downloads`, `.nojekyll`을 함께 반영합니다. 기존 Pages 브랜치 배포와 Actions 배포 모두 같은 대시보드를 제공하며, CI가 소스와 공개 실행 파일의 일치를 확인합니다.
 
 [구현 상태](docs/08_IMPLEMENTATION_STATUS.md) · [디자인 적용](docs/11_INNERCARRY.md) · [지표 정의](docs/03_METRICS.md) · [보안](docs/06_SECURITY.md) · [MIT 라이선스](LICENSE)
