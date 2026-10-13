@@ -1,0 +1,43 @@
+{
+  "version": "1.0.0",
+  "metrics": [
+    {
+      "id": "registered",
+      "label": "누적 고유 방법론",
+      "rule": "등록일 또는 등록사실 확인일이 기준일 이하인 고유 ID. 최초등록일 미확인도 전체 확인분에 포함."
+    },
+    {
+      "id": "active",
+      "label": "적용 가능 확인",
+      "rule": "기준일·지식기준일 내 마지막 상태이력이 active인 등록 방법론."
+    },
+    {
+      "id": "new_year",
+      "label": "선택연도 신규",
+      "rule": "first_registered_on의 연도가 선택연도이고 등록일이 기준일 이하. 유효시작일 대체 금지."
+    },
+    {
+      "id": "revisions_year",
+      "label": "선택연도 개정",
+      "rule": "revision 버전의 registered_on 기준. 고유 방법론 신규 건수와 분리."
+    },
+    {
+      "id": "reviewing",
+      "label": "검토 중 신청",
+      "rule": "접수·검토·협의·심의의 신청 ID. 준비·승인대기·반려·철회 제외."
+    },
+    {
+      "id": "pending_registration",
+      "label": "승인·등록대기",
+      "rule": "현재단계 approved인 신청 ID."
+    },
+    {
+      "id": "unknown_year",
+      "label": "최초등록연도 미확인",
+      "rule": "등록사실은 확인되었으나 first_registered_on이 null인 방법론."
+    }
+  ],
+  "annual_chart": "최초등록연도 확인분만 연도별·누적으로 산정. 전체 KPI와 차이=등록연도 미확인분.",
+  "knowledge_rule": "recorded_on <= knowledge_as_of; 발생일<=as_of. 일 단위, Asia/Seoul.",
+  "age_rule": "현 단계 진입일 이후 달력일. 보완 요청은 단계 진입일을 초기화하지 않음."
+}

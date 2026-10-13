@@ -1,0 +1,476 @@
+export default {
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "K-ETS Methodology Dashboard Dataset v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "metadata",
+    "methodologies",
+    "versions",
+    "applications",
+    "review_events",
+    "status_events",
+    "sources"
+  ],
+  "properties": {
+    "metadata": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema_version",
+        "dataset_id",
+        "mode",
+        "as_of",
+        "knowledge_as_of",
+        "timezone",
+        "coverage"
+      ],
+      "properties": {
+        "schema_version": {
+          "const": "1.0.0"
+        },
+        "dataset_id": {
+          "type": "string"
+        },
+        "mode": {
+          "type": "string",
+          "enum": [
+            "demo",
+            "production"
+          ]
+        },
+        "as_of": {
+          "type": "string",
+          "format": "date"
+        },
+        "knowledge_as_of": {
+          "type": "string",
+          "format": "date"
+        },
+        "timezone": {
+          "const": "Asia/Seoul"
+        },
+        "coverage": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "registrations",
+            "reviews",
+            "scope_note"
+          ],
+          "properties": {
+            "registrations": {
+              "type": "string",
+              "enum": [
+                "demo",
+                "complete",
+                "partial",
+                "missing"
+              ]
+            },
+            "reviews": {
+              "type": "string",
+              "enum": [
+                "demo",
+                "complete",
+                "partial",
+                "missing"
+              ]
+            },
+            "scope_note": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "methodologies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "code",
+          "name",
+          "scope",
+          "scope_basis",
+          "official_sector",
+          "technology",
+          "first_registered_on",
+          "registration_confirmed_on",
+          "recorded_on",
+          "source_id",
+          "public_allowed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "code": {
+            "type": "string"
+          },
+          "name": {
+            "type": "string"
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "industry",
+              "transition",
+              "other",
+              "unclassified"
+            ]
+          },
+          "scope_basis": {
+            "type": "string"
+          },
+          "official_sector": {
+            "type": "string"
+          },
+          "technology": {
+            "type": "string"
+          },
+          "first_registered_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "registration_confirmed_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "recorded_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "public_allowed": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "methodology_id",
+          "version",
+          "change_type",
+          "registered_on",
+          "effective_from",
+          "recorded_on",
+          "source_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "methodology_id": {
+            "type": "string"
+          },
+          "version": {
+            "type": "string"
+          },
+          "change_type": {
+            "type": "string",
+            "enum": [
+              "new",
+              "revision"
+            ]
+          },
+          "registered_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "effective_from": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          },
+          "recorded_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "source_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "applications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "methodology_id",
+          "title",
+          "type",
+          "scope",
+          "submitted_on",
+          "recorded_on",
+          "owner",
+          "source_id",
+          "public_allowed"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "methodology_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "type": {
+            "type": "string",
+            "enum": [
+              "new",
+              "revision"
+            ]
+          },
+          "scope": {
+            "type": "string",
+            "enum": [
+              "industry",
+              "transition",
+              "other",
+              "unclassified"
+            ]
+          },
+          "submitted_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "recorded_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "owner": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "public_allowed": {
+            "type": "boolean"
+          }
+        }
+      }
+    },
+    "review_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "application_id",
+          "sequence",
+          "occurred_on",
+          "recorded_on",
+          "stage",
+          "action",
+          "waiting",
+          "official_status_text",
+          "source_id",
+          "note",
+          "next_action",
+          "due_on"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "application_id": {
+            "type": "string"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 99999
+          },
+          "occurred_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "recorded_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "stage": {
+            "type": "string",
+            "enum": [
+              "draft",
+              "submitted",
+              "review",
+              "consultation",
+              "committee",
+              "approved",
+              "registered",
+              "rejected",
+              "withdrawn"
+            ]
+          },
+          "action": {
+            "type": "string",
+            "enum": [
+              "transition",
+              "supplement_requested",
+              "supplement_received",
+              "note"
+            ]
+          },
+          "waiting": {
+            "type": "boolean"
+          },
+          "official_status_text": {
+            "type": "string"
+          },
+          "source_id": {
+            "type": "string"
+          },
+          "note": {
+            "type": "string"
+          },
+          "next_action": {
+            "type": "string"
+          },
+          "due_on": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "format": "date"
+          }
+        }
+      }
+    },
+    "status_events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "methodology_id",
+          "sequence",
+          "occurred_on",
+          "recorded_on",
+          "status",
+          "source_id"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "methodology_id": {
+            "type": "string"
+          },
+          "sequence": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 99999
+          },
+          "occurred_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "recorded_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "active",
+              "inactive",
+              "unknown"
+            ]
+          },
+          "source_id": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "label",
+          "url",
+          "kind",
+          "access",
+          "retrieved_on",
+          "file_sha256"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "label": {
+            "type": "string"
+          },
+          "url": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "official",
+              "manual",
+              "demo"
+            ]
+          },
+          "access": {
+            "type": "string",
+            "enum": [
+              "public",
+              "internal"
+            ]
+          },
+          "retrieved_on": {
+            "type": "string",
+            "format": "date"
+          },
+          "file_sha256": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}
+;

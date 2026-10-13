@@ -1,0 +1,69 @@
+{
+  "version": "1.0.0",
+  "tasks": [
+    {
+      "id": "T01",
+      "name": "실자료 staging 매핑",
+      "status": "staging_executed_confirmation_pending",
+      "blocked_by": [
+        "source_conflicts_on_hold_by_user",
+        "registration_and_stage_evidence",
+        "revision_identity_and_scope_mapping"
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "React 설치·빌드",
+      "status": "locally_installed_ci_install_and_build_verified",
+      "blocked_by": [
+      ]
+    },
+    {
+      "id": "T02B",
+      "name": "React 상세이력·CSV 등 전체 기능 이식",
+      "status": "pending",
+      "blocked_by": []
+    },
+    {
+      "id": "T03",
+      "name": "shadcn/ui 적용",
+      "status": "planned",
+      "blocked_by": [
+        "T02"
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "Supabase·RLS 실제 검증",
+      "status": "sql_draft_ready",
+      "blocked_by": [
+        "test_project"
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "검토 사건 쓰기·감사",
+      "status": "planned",
+      "blocked_by": [
+        "T04"
+      ]
+    },
+    {
+      "id": "T06",
+      "name": "Excel 용량 확대",
+      "status": "planned",
+      "blocked_by": [
+        "actual_row_counts"
+      ]
+    },
+    {
+      "id": "T07",
+      "name": "공식 목록 변경수집",
+      "status": "planned",
+      "blocked_by": [
+        "source_terms_and_field_mapping"
+      ]
+    }
+  ],
+  "remote_changes_performed": false
+}

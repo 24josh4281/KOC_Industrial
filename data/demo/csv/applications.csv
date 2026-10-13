@@ -1,0 +1,11 @@
+id,methodology_id,title,type,scope,submitted_on,recorded_on,owner,source_id,public_allowed
+DEMO-A001,DEMO-M001,[예시] 검토 안건 01,revision,industry,2026-07-01,2026-07-01,예시 담당 2,DEMO-INTERNAL,false
+DEMO-A002,DEMO-M002,[예시] 검토 안건 02,revision,industry,2026-08-15,2026-08-15,예시 담당 3,DEMO-INTERNAL,false
+DEMO-A003,,[예시] 검토 안건 03,new,industry,2026-09-01,2026-09-01,예시 담당 1,DEMO-INTERNAL,false
+DEMO-A004,DEMO-M004,[예시] 검토 안건 04,revision,industry,2026-06-01,2026-06-01,예시 담당 2,DEMO-INTERNAL,false
+DEMO-A005,,[예시] 검토 안건 05,new,industry,2026-10-10,2026-10-10,예시 담당 3,DEMO-INTERNAL,false
+DEMO-A006,,[예시] 검토 안건 06,new,industry,2026-07-15,2026-07-15,예시 담당 1,DEMO-INTERNAL,false
+DEMO-A007,DEMO-M007,[예시] 검토 안건 07,new,industry,2026-01-05,2026-01-05,예시 담당 2,DEMO-INTERNAL,false
+DEMO-A008,,[예시] 검토 안건 08,new,industry,2026-04-01,2026-04-01,예시 담당 3,DEMO-INTERNAL,false
+DEMO-A009,,[예시] 검토 안건 09,new,transition,2026-09-20,2026-09-20,예시 담당 1,DEMO-INTERNAL,false
+DEMO-A010,,[예시] 검토 안건 10,new,industry,2026-09-01,2026-09-01,예시 담당 2,DEMO-INTERNAL,false

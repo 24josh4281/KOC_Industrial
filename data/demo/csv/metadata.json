@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "DEMO-20261013",
+  "mode": "demo",
+  "as_of": "2026-10-13",
+  "knowledge_as_of": "2026-10-13",
+  "timezone": "Asia/Seoul",
+  "coverage": {
+    "registrations": "demo",
+    "reviews": "demo",
+    "scope_note": "전량 합성 예시. 실제 방법론·기관·신청현황·법정기한을 뜻하지 않음."
+  }
+}

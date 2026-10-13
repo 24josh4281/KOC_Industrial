@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-13",
+  "local_worktree_modified": false,
+  "excel": "original_synthetic_template_preserved",
+  "source_ppt_published": false,
+  "private_sources_published": false,
+  "memory_bundle": "passed",
+  "existing_python_tests": 21,
+  "node_tests": 11,
+  "existing_snapshot_comparisons": 96,
+  "new_deadline_tests": 2,
+  "new_deadline_snapshot_comparisons": 12,
+  "remote_checks": "See Actions for the published commit",
+  "not_verified": [
+    "Excel desktop recalculation",
+    "actual official dataset",
+    "DB connection",
+    "authentication",
+    "real-time synchronization",
+    "email and SMS delivery"
+  ],
+  "public_release_workspace": "separate sanitized directory",
+  "public_workspace_written": true,
+  "python_full_tests": 30,
+  "npm_ci": "passed",
+  "vite_build": "passed",
+  "excel_cached_kpis": 13,
+  "excel_input_roundtrip": "passed",
+  "source_workbook_unchanged": true,
+  "excel_sha256": "00aacb4ae59972fe851c8a1b17d1e8c9483e6f672880e2a87e0ecb56b55b381d",
+  "build_warnings": [
+    "TanStack use client directives ignored",
+    "JavaScript chunk exceeds 500 kB"
+  ]
+}
+

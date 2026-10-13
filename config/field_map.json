@@ -1,0 +1,71 @@
+{
+  "methodologies": [
+    "id",
+    "code",
+    "name",
+    "scope",
+    "scope_basis",
+    "official_sector",
+    "technology",
+    "first_registered_on",
+    "registration_confirmed_on",
+    "recorded_on",
+    "source_id",
+    "public_allowed"
+  ],
+  "versions": [
+    "id",
+    "methodology_id",
+    "version",
+    "change_type",
+    "registered_on",
+    "effective_from",
+    "recorded_on",
+    "source_id"
+  ],
+  "applications": [
+    "id",
+    "methodology_id",
+    "title",
+    "type",
+    "scope",
+    "submitted_on",
+    "recorded_on",
+    "owner",
+    "source_id",
+    "public_allowed"
+  ],
+  "review_events": [
+    "id",
+    "application_id",
+    "sequence",
+    "occurred_on",
+    "recorded_on",
+    "stage",
+    "action",
+    "waiting",
+    "official_status_text",
+    "source_id",
+    "note",
+    "next_action",
+    "due_on"
+  ],
+  "status_events": [
+    "id",
+    "methodology_id",
+    "sequence",
+    "occurred_on",
+    "recorded_on",
+    "status",
+    "source_id"
+  ],
+  "sources": [
+    "id",
+    "label",
+    "url",
+    "kind",
+    "access",
+    "retrieved_on",
+    "file_sha256"
+  ]
+}

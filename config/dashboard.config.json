@@ -1,0 +1,31 @@
+{
+  "project": "K-ETS Methodology Desk",
+  "version": "1.0.0",
+  "timezone": "Asia/Seoul",
+  "default_scope": "industry",
+  "as_of": "2026-10-13",
+  "knowledge_as_of": "2026-10-13",
+  "selected_year": 2026,
+  "start_year": 2015,
+  "internal_stage_age_threshold_days": 45,
+  "threshold_is_legal_deadline": false,
+  "counting_unit": {
+    "registrations": "distinct methodology.id",
+    "revisions": "version registration event",
+    "reviews": "distinct application.id"
+  },
+  "excel_capacity": {
+    "methodologies": 100,
+    "versions": 200,
+    "applications": 100,
+    "review_events": 300,
+    "status_events": 200,
+    "sources": 100
+  },
+  "production_policy": {
+    "missing_is_null": true,
+    "demo_production_mix_forbidden": true,
+    "default_publication_allowed": false,
+    "raw_internal_data_in_git": false
+  }
+}

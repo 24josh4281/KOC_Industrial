@@ -1,0 +1,12 @@
+{
+  "header_row": 5,
+  "metadata_sheet": "01_설정",
+  "sheets": {
+    "methodologies": "10_방법론",
+    "versions": "11_버전",
+    "applications": "12_신청",
+    "review_events": "13_검토이력",
+    "status_events": "14_적용상태",
+    "sources": "15_출처"
+  }
+}
