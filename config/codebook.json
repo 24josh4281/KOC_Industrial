@@ -1,0 +1,37 @@
+{
+  "scopes": {
+    "industry": "산업",
+    "transition": "전환",
+    "other": "기타",
+    "unclassified": "분류 확인 필요"
+  },
+  "stages": {
+    "draft": "신청 준비",
+    "submitted": "접수",
+    "review": "관장기관 검토",
+    "consultation": "관계기관 협의",
+    "committee": "심의",
+    "approved": "승인·등록대기",
+    "registered": "등록 완료",
+    "rejected": "반려·불승인",
+    "withdrawn": "철회",
+    "unknown": "단계 미확인"
+  },
+  "actions": {
+    "transition": "단계 변경",
+    "supplement_requested": "보완 요청",
+    "supplement_received": "보완 회신",
+    "note": "진행 메모"
+  },
+  "coverage": {
+    "demo": "합성 예시",
+    "complete": "대상 범위 전체 확보",
+    "partial": "확인된 일부 자료",
+    "missing": "자료 미확보"
+  },
+  "applicability": {
+    "active": "적용 가능 확인",
+    "inactive": "적용 불가 확인",
+    "unknown": "미확인"
+  }
+}

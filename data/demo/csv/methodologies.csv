@@ -1,0 +1,13 @@
+id,code,name,scope,scope_basis,official_sector,technology,first_registered_on,registration_confirmed_on,recorded_on,source_id,public_allowed
+DEMO-M001,DEMO-001,[예시] 폐열 회수 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),효율개선,2020-03-15,2020-03-15,2020-03-15,DEMO-PUBLIC,false
+DEMO-M002,DEMO-002,[예시] 공정 효율 개선 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),연료전환,2021-06-10,2021-06-10,2021-06-10,DEMO-PUBLIC,false
+DEMO-M003,DEMO-003,[예시] 연료 전환 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),공정가스,2022-09-01,2022-09-01,2022-09-01,DEMO-PUBLIC,false
+DEMO-M004,DEMO-004,[예시] 공정가스 처리 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),폐열활용,2023-04-07,2023-04-07,2023-04-07,DEMO-PUBLIC,false
+DEMO-M005,DEMO-005,[예시] 전동기 효율 향상 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),효율개선,2024-01-19,2024-01-19,2024-01-19,DEMO-PUBLIC,false
+DEMO-M006,DEMO-006,[예시] 열 공급 최적화 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),연료전환,2025-07-22,2025-07-22,2025-07-22,DEMO-PUBLIC,false
+DEMO-M007,DEMO-007,[예시] 산업 냉동설비 개선 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),공정가스,2026-02-12,2026-02-12,2026-02-12,DEMO-PUBLIC,false
+DEMO-M008,DEMO-008,[예시] 저탄소 원료 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),폐열활용,,2026-08-01,2026-08-01,DEMO-PUBLIC,false
+DEMO-M009,DEMO-009,[예시] 재생에너지 자가소비 방법론,transition,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),효율개선,2023-05-06,2023-05-06,2023-05-06,DEMO-PUBLIC,false
+DEMO-M010,DEMO-010,[예시] 폐기물 자원화 방법론,other,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),연료전환,2024-07-03,2024-07-03,2024-07-03,DEMO-PUBLIC,false
+DEMO-M011,DEMO-011,[예시] 분류 검토 대상 방법론,unclassified,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),공정가스,2025-04-08,2025-04-08,2025-04-08,DEMO-PUBLIC,false
+DEMO-M012,DEMO-012,[예시] 고효율 건조 방법론,industry,합성 데이터의 테스트용 분류,예시 분야(공식분류 아님),폐열활용,2026-09-01,2026-09-01,2026-09-01,DEMO-PUBLIC,false

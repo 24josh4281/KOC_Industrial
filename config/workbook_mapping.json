@@ -1,0 +1,23 @@
+{
+  "mapping_version": "1.0.0",
+  "status": "review_required",
+  "reference_sheet": "참고. 방법론 기준 구분",
+  "reference_header_row": 1,
+  "reference_headers": ["번호", "방법론명", "방법론 고유번호", "신규/개정", "대분류", "세부 분류", "방법론유효시작일", "등록형태", "관장기관", "산업/발전 구분", "사유"],
+  "application_sheet": "ORS 방법론",
+  "application_header_row": 2,
+  "application_columns": {"E": "번호", "F": "신청일자", "G": "신청유형", "R": "방법론명", "S": "방법론 분야", "T": "세부분류", "U": "방법론고유번호", "Z": "방법론유효시작일", "AA": "처리상태", "AB": "처리일자", "AC": "관장기관", "AD": "이력", "AE": "최초신청일"},
+  "internal_sheet": "방법론",
+  "internal_header_row": 2,
+  "internal_columns": {"B": "번호", "D": "방법론명", "E": "최초신청일", "H": "신청유형", "K": "처리현황", "L": "처리일자", "N": "진행상태", "O": "현 위치"},
+  "scope_candidates": {"산업": "industry", "발전": "transition"},
+  "type_candidates": {"신규": "new", "개정": "revision"},
+  "rules": {
+    "effective_date_is_registration_date": false,
+    "infer_registration_or_applicability": false,
+    "merge_by_title": false,
+    "include_project_or_credit_applications": false,
+    "include_personal_contacts": false,
+    "promote_without_review": false
+  }
+}

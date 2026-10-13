@@ -1,0 +1,15 @@
+{
+  "registered": "04_검토통계!F6",
+  "active": "04_검토통계!F7",
+  "new_year": "04_검토통계!F8",
+  "revisions_year": "04_검토통계!F9",
+  "reviewing": "04_검토통계!F10",
+  "pending_registration": "04_검토통계!F11",
+  "unknown_year": "04_검토통계!F12",
+  "unknown_status": "04_검토통계!F13",
+  "waiting": "04_검토통계!F14",
+  "overdue": "04_검토통계!F15",
+  "completed": "04_검토통계!F16",
+  "median_completed_days": "04_검토통계!F17",
+  "unknown_stage": "04_검토통계!F18"
+}

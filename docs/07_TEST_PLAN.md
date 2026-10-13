@@ -1,0 +1,27 @@
+# 07. 검증 계획
+
+## 실행 가능한 자동 테스트
+
+`python -m unittest discover -s tests -v`와 `node --test tests/web.test.mjs`. 결과는 verification/에 저장. 테스트마다 합성 원장을 사용.
+
+현재 Python 테스트에는 실행 시 Node 집계기를 호출하는 전체 snapshot 비교가 포함되어 있어 Node도 필요하다. `scripts/check_parity.py 입력.json`으로 특정 dataset의 8개 조건을 즉시 비교할 수 있다. 표준 XLSX의 열 순서·빈 ID·수식 입력·소수 순번·1904 날짜 체계 회귀검사와 실자료 매핑 규칙의 합성 테스트도 포함한다. 실제 원장 값은 테스트 fixture로 커밋하지 않는다.
+
+기본값, 개정중복 제외, 미확보 null, 등록연도 미확인, 보완기간, 과거단계, 늦은 기록, 중복 ID, 외래키 누락, demo→production 혼합 거부, 동일보완순서, 산업+전환, 공개내보내기, 상태변경행위 검사. JS와 Python 기본/전체/과거일/기록일/산업+전환 snapshot 전체 값 일치.
+
+엑셀: 수식 오류 스캔, 기본 KPI 대조, XLSX→JSON roundtrip 검사, 차트·테이블 배치 렌더 검사. Excel 데스크톱의 사용자 편집·재계산은 별도 실제 환경 확인 필요.
+
+웹: 오프라인 파일을 실제 브라우저에서 실행할 수 있는 환경에서 콘솔오류·합성 경고·KPI·탭·필터·빈 데이터·모바일 폭을 검사. 자세한 실행 여부는 08_IMPLEMENTATION_STATUS.md와 verification/검증기록 참조.
+
+## 추가 수용 테스트
+
+1. 0건이 실제 확인된 partial/complete 원장과 missing 원장을 다르게 표시.
+2. 같은 날 여러 사건, 여러 보완회신, 철회 후 재접수는 사건 ID·순서 기준으로 판정.
+3. 단계를 되돌렸다가 재진입하면 재진입일부터 단계경과일 시작.
+4. 자료 갱신 실패가 등록 취소·삭제로 반영되지 않음.
+5. 실제 Excel 용량 초과 시 합계 누락이 발생하지 않도록 범위 확장·성능 테스트.
+6. Supabase 익명/조회자/검토자/타조직 역할별 접근 테스트.
+7. GitHub Pages 빌드산출물에 원본 검토대장·이메일·소스맵·secret key 없음.
+
+## 테스트하지 않은 사항을 완료로 표시 금지
+
+운영 공식데이터 정확성, 실자료 확정집계, ORS 자동수집, Supabase 적용, RLS 실제 동작, GitHub Actions/Pages 원격 실행은 미검증이다. npm 설치·React production build는 2026-10-13 로컬 검증을 완료했으며 기록은 `verification/local-2026-10-13/` 참조. CI 파일이 존재한다는 사실은 CI 실행 성공을 뜻하지 않음.

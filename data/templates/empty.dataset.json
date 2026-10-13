@@ -1,0 +1,21 @@
+{
+  "metadata": {
+    "schema_version": "1.0.0",
+    "dataset_id": "REPLACE_WITH_DATASET_ID",
+    "mode": "production",
+    "as_of": "2026-10-13",
+    "knowledge_as_of": "2026-10-13",
+    "timezone": "Asia/Seoul",
+    "coverage": {
+      "registrations": "missing",
+      "reviews": "missing",
+      "scope_note": "관할·확보 범위·기준일을 입력하십시오. 자료 미확보는 0건이 아닙니다."
+    }
+  },
+  "methodologies": [],
+  "versions": [],
+  "applications": [],
+  "review_events": [],
+  "status_events": [],
+  "sources": []
+}
