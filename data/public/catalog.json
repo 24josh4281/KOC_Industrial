@@ -1,0 +1,669 @@
+{
+  "catalog_version": "1.0.0",
+  "captured_on": "2026-10-14",
+  "coverage": "partial",
+  "scope_note": "산업·전환 분석 대상으로 선택한 33개 코드의 ORS 공개 이력 확인분. 산업부문 전체 통계가 아닙니다.",
+  "date_basis": "방법론 유효시작일. 최초등록일·신청일·심사일과 다릅니다.",
+  "source_url": "https://ors.gir.go.kr/home/orme010/activeList.do?menuId=12",
+  "methods": [
+    {
+      "code": "01A-001",
+      "name": "목재펠릿을 활용한 연료전환 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "화석연료, 바이오매스를 통한 열에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=15&menuId=12",
+      "source_sha256": "3c87f30ffaed3d4aa14fc3ce10401720d2dbbf478cb58dc35eddf0bc3ff97482"
+    },
+    {
+      "code": "01A-006",
+      "name": "가축분뇨 고체연료를 활용한 열/전력 생산 및 이용 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "화석연료, 바이오매스를 통한 열에너지 생산",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=469&menuId=12",
+      "source_sha256": "55de671717bc58744e60867a55a042c34cbd35256766c8819c8b0285ceabb609"
+    },
+    {
+      "code": "01B-001",
+      "name": "재생에너지를 이용한 전력 생산 및 계통 연계 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=18&menuId=12",
+      "source_sha256": "ec96acef8371f017a2623e4b7555cdaa78a29044686b27499de8b43031abb2af"
+    },
+    {
+      "code": "01B-003",
+      "name": "태양열에너지를 이용한 열에너지 생산 및 이용 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=20&menuId=12",
+      "source_sha256": "b384e3fdb05b4e3deceddd2c071ff8d5f2307173599bf907b5cc03be55d7e44c"
+    },
+    {
+      "code": "01B-004",
+      "name": "재생에너지를 이용한 전력 생산 및 자가 사용 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=44&menuId=12",
+      "source_sha256": "c65b8383754d3d336e98d2655f331f1d40d003cf6a099e14a75e31f1705a3170"
+    },
+    {
+      "code": "01B-008",
+      "name": "전력 자가사용 및 독립된 소규모 계통 연계를 위한 재생에너지 발전사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=353&menuId=12",
+      "source_sha256": "45b25cf71f3f65fe98396f087b631c64bb204fb399afd42e7fb7d9f84855a338"
+    },
+    {
+      "code": "01B-009",
+      "name": "수소 연료전지를 이용한 전기 및 열생산 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=532&menuId=12",
+      "source_sha256": "63957578212bee486079d3857454741d5e658d2b7ea4070416cfab9c2bef2776"
+    },
+    {
+      "code": "01B-011",
+      "name": "재생에너지를 통해 생산한 전력을 자가 사용 및/또는 계통 연계하는 사업의 방법론",
+      "sector": "에너지산업",
+      "subsector": "신재생에너지로부터의 에너지 생산",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=537&menuId=12",
+      "source_sha256": "d380cb3448622da0d9ddd0f2469d213f7f0e1221976a57d97c7c13991275a364"
+    },
+    {
+      "code": "02A-001",
+      "name": "자가발전을 통한 사업장 전력 대체 온실가스 감축 방법론",
+      "sector": "에너지 공급",
+      "subsector": "전기 공급",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=406&menuId=12",
+      "source_sha256": "06ce46829494c5d2f4c828fef3481ac75e0e89f47091232eef167ffd30cc66a6"
+    },
+    {
+      "code": "02B-001",
+      "name": "열공급시설에서 목질계 바이오매스 연료를 이용하여 생산된 열에너지 공급을 통한 수용가의 화석연료 사용량 절감사업의 방법론",
+      "sector": "에너지 공급",
+      "subsector": "열 공급",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=332&menuId=12",
+      "source_sha256": "afe584b3eb4885f2e3b3b550a7c1cf96ddcee2e480d56532d1728a7966e38f71"
+    },
+    {
+      "code": "02B-002",
+      "name": "섬유염색공정에서 증기 전용 텐터기 도입과 텐터기 전용 열 공급을 통한 수용가의 화석연료 사용량 절감사업의 방법론",
+      "sector": "에너지 공급",
+      "subsector": "열 공급",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=438&menuId=12",
+      "source_sha256": "fba84478ab9f1ec0050086aa86c7d8d7c39f152403e375aaf214a2542cc092c2"
+    },
+    {
+      "code": "03A-001",
+      "name": "미활용 열에너지 회수 및 이용 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=40&menuId=12",
+      "source_sha256": "082e9e64934cdc43dc3385e30237b7ed285161ab701e764fbd1ed83c3716cbb2"
+    },
+    {
+      "code": "03A-002",
+      "name": "연료 전환 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=466&menuId=12",
+      "source_sha256": "096f554c5563a95b76b122f85ee62ed2982ca69dc529f44dc2cb1a14817ce3e8"
+    },
+    {
+      "code": "03A-003",
+      "name": "전력절감설비 설치사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=22&menuId=12",
+      "source_sha256": "5a6830a0fb1d584a785580e9cfab234f7856103881a65e43bf98f7b2fac7192b"
+    },
+    {
+      "code": "03A-004",
+      "name": "고효율 설비 교체 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=23&menuId=12",
+      "source_sha256": "f90516bdc0b3a593cf9ffb201db5504da5925217435c037bb3b282575e27a4dd"
+    },
+    {
+      "code": "03A-006",
+      "name": "고효율 도로조명 설치 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=25&menuId=12",
+      "source_sha256": "800e817bd54d37d2a447050d8eaee19f63635494e358be7f622e00be06b379a6"
+    },
+    {
+      "code": "03A-008",
+      "name": "미활용 열에너지 회수를 통한 전력생산 및 계통연게 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=42&menuId=12",
+      "source_sha256": "4d6cf773c8b015fddadd02b9ecf66d6a47e1193d7ca8ed2cba155272d83e8674"
+    },
+    {
+      "code": "03A-013",
+      "name": "주거용 시설의 심야 전기보일러에서 축열식 히트펌프 보일러로 교체 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=50&menuId=12",
+      "source_sha256": "4a38fdcaad325208a19beaa8eabec53d193d5c4aad2ec999c601fc9cef7c4acf"
+    },
+    {
+      "code": "03A-016",
+      "name": "LPG집단공급시설 설치를 통한 연료 전환 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=337&menuId=12",
+      "source_sha256": "b080b6c564b8391334861dc0098e98befe54b27432508c2cca42139dd686de19"
+    },
+    {
+      "code": "03A-018",
+      "name": "Single RAN 설비를 도입하여 legacy 전기통신설비를 대체하는 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=333&menuId=12",
+      "source_sha256": "0a030eb99a0e9f1bd4c10d8ea1a000dbd14b6cc44cee8037b071382e50eec703"
+    },
+    {
+      "code": "03A-027",
+      "name": "미활용 LNG 기화 냉열 활용을 통한 전력 및 또는 화석연료 사용 절감 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=440&menuId=12",
+      "source_sha256": "c2b67a344004a0351ef7e914d37b55aee272112ad81d05c63ef816b1b943f145"
+    },
+    {
+      "code": "03A-030",
+      "name": "미활용 열에너지 회수 및 이용 또는 계통연계 사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "직권등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=531&menuId=12",
+      "source_sha256": "c5b728fa7545ae5820712b84c65798ff8c03ceb84e4e0f3f3ad927387cb65e3b"
+    },
+    {
+      "code": "03A-033",
+      "name": "공동 통신망 기술 적용에 따른 온실가스 감축사업의 방법론",
+      "sector": "에너지 수요",
+      "subsector": "에너지 수요",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=436&menuId=12",
+      "source_sha256": "aef4287f6a447e1f353b8fa8e8950da32461c3ce82be363ecf8e3705363246a8"
+    },
+    {
+      "code": "04A-001",
+      "name": "혼합시멘트 생산에서 원료의 부분적인 전환 및 혼합재 비율 증가를 통한 온실가스 감축",
+      "sector": "제조업",
+      "subsector": "시멘트 분야",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=330&menuId=12",
+      "source_sha256": "bd16e05478274df7a0a9c3b6edef1437904fca9c34a8581307361773600dc34c"
+    },
+    {
+      "code": "04E-001",
+      "name": "제지공정에서 침강성탄산칼슘 제조과정의 미활용 CO2 이용과 에너지절감 사업의 방법론",
+      "sector": "제조업",
+      "subsector": "기타",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=369&menuId=12",
+      "source_sha256": "1440461812d55372b8ef61e4f4de58a1f8addf6b333e338bdc6be0d9b7172c95"
+    },
+    {
+      "code": "05A-001",
+      "name": "부생수소 활용을 통한 수소제조공정 대체사업의 방법론",
+      "sector": "화학산업",
+      "subsector": "화학공정 산업",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=325&menuId=12",
+      "source_sha256": "f9c7873d4a03f4e3b59b92eafa5275b59c5669daea6c01178bb360dcde176ff7"
+    },
+    {
+      "code": "06A-001",
+      "name": "국내 중온 아스팔트 혼합물 생산을 통한 연료 및 온실가스 저감에 대한 방법론",
+      "sector": "건설",
+      "subsector": "건설",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=324&menuId=12",
+      "source_sha256": "cb42daea2c6f233060576bba40ec218dc7cd08a9c555337a871cfc56c0c17f02"
+    },
+    {
+      "code": "11B-001",
+      "name": "가스절연개폐장치 검사용 SF6 회수ㆍ정제 및 재사용을 통한 SF6 감축사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=49&menuId=12",
+      "source_sha256": "782589f8893da82a1b7f436af3f6d18ccea7c89987b73efd71ba40c1935cd8a0"
+    },
+    {
+      "code": "11B-002",
+      "name": "광전지 제조 공정의 SF6 가스 처리를 통한 온실가스 감축 사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=315&menuId=12",
+      "source_sha256": "c2e923a729f14501d31bca510c4fe787372f4e58c24584a9fd3497eaf0c60e21"
+    },
+    {
+      "code": "11B-003",
+      "name": "발포제로 사용되는 HFC-152a 회수·정제 및 재사용을 통한 HFC-152a 감축사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=299&menuId=12",
+      "source_sha256": "6e4a0743a28249e2b2d1eb09c613a4e4b37f7abef2b6f41a49dd8b06d64a1ac7"
+    },
+    {
+      "code": "11B-004",
+      "name": "가스절연 전기기기의 시험에 따라 발생되는 육불화황(SF6) 가스의 회수 및 플라즈마 분해를 통한 온실가스 감축 사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=515&menuId=12",
+      "source_sha256": "6afbdac153337163780dd93eac8c216773c163a59c4afced30a1e21b8f19c48e"
+    },
+    {
+      "code": "11B-005",
+      "name": "전력계통내 폐기된 전기설비의 충진된 SF6를 회수 및 정제하는 사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=383&menuId=12",
+      "source_sha256": "8a2b77e55749b57c856bbfc8d4919bed01aa788fb208990425206d8d0071c3bd"
+    },
+    {
+      "code": "11B-006",
+      "name": "반도체 제조공정의 F-Gas 감축설비 도입을 통한 온실가스 감축 사업의 방법론",
+      "sector": "할로겐화탄소, 육불화황 생산및소비로부터의 탈루배출",
+      "subsector": "온실가스 포집 및 파괴",
+      "registration_type": "신청등록",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=404&menuId=12",
+      "source_sha256": "fb42e0cd09477e9fb80016283c82758e03c8a98ad943aaf1da4f75fe7867b1c7"
+    }
+  ],
+  "versions": [
+    {
+      "id": "01A-001-Ver01",
+      "code": "01A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "목재펠릿을 활용한 연료전환 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=15&menuId=12"
+    },
+    {
+      "id": "01A-006-Ver01",
+      "code": "01A-006",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2025-09-02",
+      "name": "가축분뇨 고체연료를 활용한 열/전력 생산 및 이용 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=469&menuId=12"
+    },
+    {
+      "id": "01B-001-Ver01",
+      "code": "01B-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "재생에너지를 이용한 전력 생산 및 계통 연계 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=18&menuId=12"
+    },
+    {
+      "id": "01B-003-Ver01",
+      "code": "01B-003",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "태양열에너지를 이용한 열에너지 생산 및 이용 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=20&menuId=12"
+    },
+    {
+      "id": "01B-004-Ver01",
+      "code": "01B-004",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2016-05-26",
+      "name": "재생에너지를 이용한 전력 생산 및 자가 사용 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=44&menuId=12"
+    },
+    {
+      "id": "01B-008-Ver01",
+      "code": "01B-008",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2020-06-05",
+      "name": "전력 자가사용 및 독립된 소규모 계통 연계를 위한 재생에너지 발전사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=353&menuId=12"
+    },
+    {
+      "id": "01B-009-Ver01",
+      "code": "01B-009",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2022-09-30",
+      "name": "수소 연료전지를 이용한 전기 및 열생산 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=532&menuId=12"
+    },
+    {
+      "id": "01B-009-Ver02",
+      "code": "01B-009",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2025-12-02",
+      "name": "수소 연료전지를 이용한 전기 및 열생산 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=532&menuId=12"
+    },
+    {
+      "id": "01B-011-Ver01",
+      "code": "01B-011",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2024-09-03",
+      "name": "재생에너지를 통해 생산한 전력을 자가 사용 및/또는 계통 연계하는 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=537&menuId=12"
+    },
+    {
+      "id": "01B-011-Ver02",
+      "code": "01B-011",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2026-09-02",
+      "name": "재생에너지를 통해 생산한 전력을 자가 사용 및/또는 계통 연계하는 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=537&menuId=12"
+    },
+    {
+      "id": "02A-001-Ver01",
+      "code": "02A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2024-09-03",
+      "name": "자가발전을 통한 사업장 전력 대체 온실가스 감축 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=406&menuId=12"
+    },
+    {
+      "id": "02B-001-Ver01",
+      "code": "02B-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2017-03-16",
+      "name": "열공급시설에서 목질계 바이오매스 연료를 이용하여 생산된 열에너지 공급을 통한 수용가의 화석연료 사용량 절감사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=332&menuId=12"
+    },
+    {
+      "id": "02B-001-Ver02",
+      "code": "02B-001",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2021-02-25",
+      "name": "열공급시설에서 목질계 바이오매스 연료를 이용하여 생산된 열에너지 공급을 통한 수용가의 화석연료 사용량 절감사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=332&menuId=12"
+    },
+    {
+      "id": "02B-002-Ver01",
+      "code": "02B-002",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2025-09-02",
+      "name": "섬유염색공정에서 증기 전용 텐터기 도입과 텐터기 전용 열 공급을 통한 수용가의 화석연료 사용량 절감사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=438&menuId=12"
+    },
+    {
+      "id": "03A-001-Ver01",
+      "code": "03A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2016-02-05",
+      "name": "미활용 열에너지 회수 및 이용 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=40&menuId=12"
+    },
+    {
+      "id": "03A-002-Ver01",
+      "code": "03A-002",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "연료 전환 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=466&menuId=12"
+    },
+    {
+      "id": "03A-002-Ver02",
+      "code": "03A-002",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2021-12-28",
+      "name": "연료 전환 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=466&menuId=12"
+    },
+    {
+      "id": "03A-002-Ver03",
+      "code": "03A-002",
+      "version": "03",
+      "change_type": "revision",
+      "effective_from": "2024-06-04",
+      "name": "연료 전환 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=466&menuId=12"
+    },
+    {
+      "id": "03A-003-Ver01",
+      "code": "03A-003",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "전력절감설비 설치사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=22&menuId=12"
+    },
+    {
+      "id": "03A-004-Ver01",
+      "code": "03A-004",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "고효율 설비 교체 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=23&menuId=12"
+    },
+    {
+      "id": "03A-006-Ver01",
+      "code": "03A-006",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2015-04-21",
+      "name": "고효율 도로조명 설치 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=25&menuId=12"
+    },
+    {
+      "id": "03A-008-Ver01",
+      "code": "03A-008",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2016-02-05",
+      "name": "미활용 열에너지 회수를 통한 전력생산 및 계통연게 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=42&menuId=12"
+    },
+    {
+      "id": "03A-013-Ver01",
+      "code": "03A-013",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2017-12-12",
+      "name": "주거용 시설의 심야 전기보일러에서 축열식 히트펌프 보일러로 교체 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=50&menuId=12"
+    },
+    {
+      "id": "03A-016-Ver01",
+      "code": "03A-016",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2020-02-25",
+      "name": "LPG집단공급시설 설치를 통한 연료 전환 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=337&menuId=12"
+    },
+    {
+      "id": "03A-018-Ver01",
+      "code": "03A-018",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2020-10-16",
+      "name": "Single RAN 설비를 도입하여 legacy 전기통신설비를 대체하는 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=333&menuId=12"
+    },
+    {
+      "id": "03A-027-Ver01",
+      "code": "03A-027",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2024-03-08",
+      "name": "미활용 LNG 기화 냉열 활용을 통한 전력 및 또는 화석연료 사용 절감 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=440&menuId=12"
+    },
+    {
+      "id": "03A-030-Ver01",
+      "code": "03A-030",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2024-06-04",
+      "name": "미활용 열에너지 회수 및 이용 또는  계통연계 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=531&menuId=12"
+    },
+    {
+      "id": "03A-030-Ver02",
+      "code": "03A-030",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2025-12-02",
+      "name": "미활용 열에너지 회수 및 이용 또는 계통연계 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=531&menuId=12"
+    },
+    {
+      "id": "03A-033-Ver01",
+      "code": "03A-033",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2025-03-05",
+      "name": "공동 통신망 기술 적용에 따른 온실가스 감축사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=436&menuId=12"
+    },
+    {
+      "id": "04A-001-Ver01",
+      "code": "04A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2022-12-13",
+      "name": "혼합시멘트 생산에서 원료의 부분적인 전환 및 혼합재 비율 증가를 통한 온실가스 감축",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=330&menuId=12"
+    },
+    {
+      "id": "04E-001-Ver01",
+      "code": "04E-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2022-12-13",
+      "name": "제지공정에서 침강성탄산칼슘 제조과정의 미활용 CO2 이용과 에너지절감 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=369&menuId=12"
+    },
+    {
+      "id": "05A-001-Ver01",
+      "code": "05A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2020-10-16",
+      "name": "부생수소 활용을 통한 수소제조공정 대체사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=325&menuId=12"
+    },
+    {
+      "id": "06A-001-Ver01",
+      "code": "06A-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2021-12-28",
+      "name": "국내 중온 아스팔트 혼합물 생산을 통한 연료 및 온실가스 저감에 대한 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=324&menuId=12"
+    },
+    {
+      "id": "11B-001-Ver01",
+      "code": "11B-001",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2017-12-12",
+      "name": "가스절연개폐장치 검사용 SF6 회수ㆍ정제 및 재사용을 통한 SF6 감축사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=49&menuId=12"
+    },
+    {
+      "id": "11B-002-Ver01",
+      "code": "11B-002",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2020-10-16",
+      "name": "광전지 제조 공정의 SF6 가스 처리를 통한 온실가스 감축 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=315&menuId=12"
+    },
+    {
+      "id": "11B-003-Ver01",
+      "code": "11B-003",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2021-02-25",
+      "name": "발포제로 사용되는 HFC-152a 회수·정제 및 재사용을 통한 HFC-152a 감축사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=299&menuId=12"
+    },
+    {
+      "id": "11B-004-Ver01",
+      "code": "11B-004",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2021-12-28",
+      "name": "가스절연 전기기기의 시험에 따라 발생되는 육불화황(SF6) 가스의 회수 및 플라즈마 분해를 통한 온실가스 감축 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=515&menuId=12"
+    },
+    {
+      "id": "11B-004-Ver02",
+      "code": "11B-004",
+      "version": "02",
+      "change_type": "revision",
+      "effective_from": "2026-06-02",
+      "name": "가스절연 전기기기의 시험에 따라 발생되는 육불화황(SF6) 가스의 회수 및 플라즈마 분해를 통한 온실가스 감축 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=515&menuId=12"
+    },
+    {
+      "id": "11B-005-Ver01",
+      "code": "11B-005",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2023-03-07",
+      "name": "전력계통내 폐기된 전기설비의 충진된 SF6를 회수 및 정제하는 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=383&menuId=12"
+    },
+    {
+      "id": "11B-006-Ver01",
+      "code": "11B-006",
+      "version": "01",
+      "change_type": "new",
+      "effective_from": "2023-03-07",
+      "name": "반도체 제조공정의 F-Gas 감축설비 도입을 통한 온실가스 감축 사업의 방법론",
+      "source_url": "https://ors.gir.go.kr/home/orme010/historyRead.do?methdSeq=404&menuId=12"
+    }
+  ]
+}

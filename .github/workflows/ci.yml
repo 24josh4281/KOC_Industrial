@@ -33,5 +33,6 @@ jobs:
           name: excel-and-web
           path: |
             excel/KETS_Methodology_Dashboard.xlsx
+            excel/KETS_Public_Insights_20261014.xlsx
             web/dist
             preview/dashboard.html
