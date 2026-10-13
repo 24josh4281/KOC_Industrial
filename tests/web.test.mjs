@@ -4,8 +4,28 @@ import fs from 'node:fs';
 import {snapshot,validate,csvValue} from '../web/src/core.mjs';
 import {displayValue,coverageLabel} from '../web/src/presentation.mjs';
 import {viewRows,visibleHistory,visibleVersions} from '../web/src/views.mjs';
+import {publicInsights,validateCatalog} from '../web/src/insights.mjs';
 const read=p=>JSON.parse(fs.readFileSync(new URL(p,import.meta.url),'utf8'));
 const d=read('../data/demo/dataset.json');
+const publicCatalog=read('../data/public/catalog.json');
+test('public catalog preserves units and missing operational data',()=>{
+ const s=publicInsights(publicCatalog);
+ assert.equal(s.metrics.methods,33);assert.equal(s.metrics.versions,40);
+ assert.equal(s.metrics.revised_methods,6);assert.equal(s.metrics.applications,null);
+ assert.equal(s.metrics.overdue,null);assert.equal(s.annual.reduce((n,r)=>n+r.new+r.revisions,0),40);
+});
+test('public catalog rejects unapproved fields and non-public sources',()=>{
+ for(const mutate of [x=>x.applications=[],x=>x.methods[0].owner='private',x=>x.methods[0].source_url='https://example.com',x=>x.versions.push(x.versions[0])]){
+  const x=structuredClone(publicCatalog);mutate(x);assert.throws(()=>validateCatalog(x));
+ }
+});
+test('public scenario no matches and zero denominator are distinct from missing',()=>{
+ const s=publicInsights(publicCatalog,{query:'no-match'});
+ assert.equal(s.metrics.methods,0);assert.equal(s.metrics.revision_share,null);assert.equal(s.comparison.percent,null);
+ assert.throws(()=>publicInsights(publicCatalog,{as_of:'2026-02-30'}));
+ assert.throws(()=>publicInsights(publicCatalog,{as_of:'2030-01-01'}));
+ assert.throws(()=>publicInsights(publicCatalog,{year:2030}));
+});
 for(const [name,opts] of [['default',{}],['all',{scope:'all'}],['historical',{as_of:'2026-09-01'}],['known',{knowledge_as_of:'2026-09-01'}],['industry_transition',{scope:'industry_transition'}]])test('Python/JS parity: '+name,()=>assert.deepEqual(snapshot(d,opts),read('../verification/fixture-'+name+'.json')));
 test('missing is null',()=>assert.equal(snapshot(read('../data/templates/empty.dataset.json')).kpis.registered,null));
 test('duplicate rejected',()=>{const x=structuredClone(d);x.methodologies.push(x.methodologies[0]);assert.throws(()=>validate(x));});

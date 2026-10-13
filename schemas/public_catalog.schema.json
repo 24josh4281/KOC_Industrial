@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "title":"ORS public catalog v1 (independent of the operational dataset)",
+  "type":"object","additionalProperties":false,
+  "required":["catalog_version","captured_on","coverage","scope_note","date_basis","source_url","methods","versions"],
+  "properties":{
+    "catalog_version":{"const":"1.0.0"},"captured_on":{"type":"string","format":"date"},"coverage":{"const":"partial"},
+    "scope_note":{"type":"string"},"date_basis":{"type":"string"},"source_url":{"$ref":"#/$defs/publicUrl"},
+    "methods":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["code","name","sector","subsector","registration_type","source_url","source_sha256"],"properties":{
+      "code":{"type":"string","pattern":"^[0-9]{2}[A-Z]-[0-9]{3}$"},"name":{"type":"string"},"sector":{"type":"string"},"subsector":{"type":"string"},"registration_type":{"type":"string"},"source_url":{"$ref":"#/$defs/publicUrl"},"source_sha256":{"type":"string","pattern":"^[a-f0-9]{64}$"}
+    }}},
+    "versions":{"type":"array","items":{"type":"object","additionalProperties":false,"required":["id","code","version","change_type","effective_from","name","source_url"],"properties":{
+      "id":{"type":"string"},"code":{"type":"string"},"version":{"type":"string","pattern":"^[0-9]+$"},"change_type":{"enum":["new","revision"]},"effective_from":{"type":"string","format":"date"},"name":{"type":"string"},"source_url":{"$ref":"#/$defs/publicUrl"}
+    }}}
+  },
+  "$defs":{"publicUrl":{"type":"string","pattern":"^https://ors\\.gir\\.go\\.kr/home/orme010/(activeList|historyRead)\\.do\\?"}}
+}
