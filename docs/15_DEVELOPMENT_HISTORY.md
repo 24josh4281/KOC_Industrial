@@ -12,6 +12,7 @@
 | 전체 자료 검토 (`bc5d020`) | 공개 보고서·설명서, 디자인 프로필, 로컬 원본 탐색 | 로컬 내부 자료는 공개 배포 대상이 아님 |
 | 관리 Tool 분류 (`433a9f2`) | 원본 관리 Excel을 보존한 분석 시트·차트·슬라이서와 로컬 웹 11분류·교차표 | 원장행은 고유 신청 또는 등록 건수가 아님 |
 | 2026-10-14 후속 작업 | ORS 다운로드 파일의 보수적 갱신, 동일 입력 실행 방지, 근거 있는 수식 복구와 `기준 미확인` 분리, 원본 셀 전수 대조, 로컬 관리 화면의 ECharts 연도 그래프·TanStack 정렬 표 | [구현 상태](08_IMPLEMENTATION_STATUS.md)와 `verification/2026-10-14_*.md` 참조. DB와 공개 원장 반영은 수행하지 않음 |
+| 공개 배포 (`5747ddc`, PR #6, 병합 `85cf99c`) | 검증한 공개용 소스·문서·정적 번들을 `main`에 반영 | [CI 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347985), [Pages 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347986). 공개 첫 화면과 공개 Excel의 HTTP 응답 확인. 로컬 내부 JSON/HTML·Excel 검토본은 배포하지 않음 |
 
 ## 현재 제공 방식
 
@@ -30,4 +31,4 @@
 
 ## 공개 배포 검사 원칙
 
-`web/dist`와 저장소 루트의 Pages 산출물에는 공개 허용목록의 코드·공개 Excel·설명서만 둔다. 로컬 `inputs/`, `outputs/`, `local/`, 내부 JSON/HTML, 원장·연락처·검토 메모, 비밀키는 배포하지 않는다. Python·웹 테스트, Python/JavaScript 집계 동등성, React 빌드, 정적 파일 허용목록 및 원격 CI/Pages 상태를 확인한다. 배포일과 커밋은 성공이 확인된 뒤 이 문서에 기록한다.
+`web/dist`와 저장소 루트의 Pages 산출물에는 공개 허용목록의 코드·공개 Excel·설명서만 둔다. 로컬 `inputs/`, `outputs/`, `local/`, 내부 JSON/HTML, 원장·연락처·검토 메모, 비밀키는 배포하지 않는다. Python·웹 테스트, Python/JavaScript 집계 동등성, React 빌드, 정적 파일 허용목록 및 원격 CI/Pages 상태를 확인한다. 실제 브라우저 조작과 모바일 화면 검증은 HTTP 응답 및 빌드 성공과 구분한다.
