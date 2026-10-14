@@ -1,6 +1,6 @@
 import json,subprocess,unittest
 from pathlib import Path
-from kets_dashboard.materials import material_summary
+from kets_dashboard.materials import material_summary,source_coverage
 ROOT=Path(__file__).resolve().parents[1]
 
 class MaterialsParityTests(unittest.TestCase):
@@ -14,3 +14,15 @@ class MaterialsParityTests(unittest.TestCase):
         self.assertEqual(material_summary(fixture)['methodology_applications'],2)
         self.assertEqual(material_summary(fixture)['nonempty_rows'],2)
         self.assertEqual(material_summary(fixture)['cached_error_cells'],1)
+
+    def test_file_cell_coverage_matches_web_without_business_counting(self):
+        fixture={'files':[{'id':'M','filename':'managed.xlsx','format':'xlsx'},
+                          {'id':'O','filename':'ors.xls','format':'xls'}],
+                 'sheets':[{'source_id':'M','rows':[{'cells':[{'value':0},{'value':'기준 미확인','formula':'=A1'}, {'value':None,'error':True}]}]},
+                           {'source_id':'O','rows':[{'cells':[{'value':'raw'}]}]}]}
+        expected=source_coverage(fixture)
+        result=subprocess.run(['node',str(ROOT/'scripts/source_coverage.mjs')],input=json.dumps(fixture,ensure_ascii=False),capture_output=True,text=True,encoding='utf-8',check=True)
+        self.assertEqual(json.loads(result.stdout),expected)
+        self.assertEqual(expected[0]['cells'],3)
+        self.assertEqual(expected[0]['unavailable'],1)
+        self.assertEqual(expected[0]['saved_errors'],1)

@@ -1,6 +1,32 @@
 """Source-row review counts, explicitly separate from official business counts."""
 from collections import Counter
 
+
+def source_coverage(data):
+    """Count recorded source cells by file without treating rows as business cases."""
+    sheets_by_file = {}
+    for sheet in data.get('sheets', []):
+        sheets_by_file.setdefault(sheet.get('source_id'), []).append(sheet)
+    files = []
+    for source in data.get('files', []):
+        sheets = sheets_by_file.get(source['id'], [])
+        rows = cells = formulas = saved_errors = unavailable = 0
+        for sheet in sheets:
+            rows += len(sheet.get('rows', []))
+            for row in sheet.get('rows', []):
+                for cell in row['cells']:
+                    cells += 1
+                    formulas += bool(cell.get('formula'))
+                    saved_errors += bool(cell.get('error'))
+                    unavailable += cell.get('value') == '기준 미확인'
+        files.append({
+            'id': source['id'], 'filename': source['filename'], 'format': source['format'],
+            'sheets': len(sheets), 'rows': rows,
+            'cells': cells, 'formulas': formulas,
+            'saved_errors': saved_errors, 'unavailable': unavailable,
+        })
+    return files
+
 def material_summary(data):
     sheets=data.get('sheets',[])
     apps=data.get('applications',[])
