@@ -1,5 +1,5 @@
 {
-  "version": "2.0.0",
+  "version": "2.1.0",
   "default_profile": "innergen",
   "purpose": "외부사업 방법론과 원장의 현황 조회 및 의사결정 지원",
   "sources": [
@@ -21,7 +21,8 @@
     "chart":{"zero_baseline_counts":true,"data_table_required":true,"color_only_meaning":false},
     "ledger":{"sticky_header":true,"numeric_alignment":"right","text_alignment":"left","mobile_overflow":"table_only"},
     "dialog":{"escape_close":true,"source_and_date_required":true},
-    "materials":{"source_first":true,"cross_source_counts_additive":false,"raw_status_not_standard_stage":true}
+    "materials":{"source_first":true,"cross_source_counts_additive":false,"raw_status_not_standard_stage":true},
+    "classified_management":{"multi_select":true,"facets":11,"native_excel_slicers":10,"charts":6,"cross_table_axes":"user_selected","source_row_navigation":true,"unit":"source_rows_not_deduplicated_applications"}
   },
   "restrictions":["정부·공단 로고 및 공식 누리집 문구 미사용","비공개 원장 빌드·배포 금지","기관의 법적 상태·기한 자동 판단 금지"]
 }
