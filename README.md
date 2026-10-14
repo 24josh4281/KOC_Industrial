@@ -16,6 +16,8 @@
 
 ## 기능과 구현 상태
 
+새 검토 기능은 `design.json`의 이너젠·공단 참고형·KRDS 참고형으로 표시 방식을 전환한다. `?view=insights`는 공개 인사이트, `?view=manual`은 사용 설명서, `?view=materials`는 로컬 자료를 읽는 범용 화면이다. [사용 설명서 PDF](docs/KETS_Dashboard_Manual_20261014.pdf)와 [디자인 명세](design.md)를 함께 제공한다. 내부 자료·내부 보고서는 공개 저장소에 포함하지 않는다. 이번 변경의 실제 배포 여부는 [구현 상태](docs/08_IMPLEMENTATION_STATUS.md)를 확인한다.
+
 | 기능 | 상태 |
 |---|---|
 | ORS 공개 이력·출처 연결 / 실자료 33개 코드·40개 버전 | 구현·공개 확인분 |
@@ -69,3 +71,5 @@ npm run dev
 공개 웹 갱신 시 `web` 폴더에서 `npm run build`를 실행한 다음, 저장소 루트에서 `python scripts/stage_public_site.py`를 실행합니다. 생성된 `index.html`, `assets`, `downloads`, `.nojekyll`을 함께 반영합니다. 기존 Pages 브랜치 배포와 Actions 배포 모두 같은 대시보드를 제공하며, CI가 소스와 공개 실행 파일의 일치를 확인합니다.
 
 [공개 분석 시나리오](docs/12_PUBLIC_INSIGHTS.md) · [구현 상태](docs/08_IMPLEMENTATION_STATUS.md) · [디자인 적용](docs/11_INNERCARRY.md) · [지표 정의](docs/03_METRICS.md) · [보안](docs/06_SECURITY.md) · [코드 MIT 라이선스](LICENSE). 공개 원자료의 권리는 원 출처에 있습니다.
+
+[개발 히스토리와 남은 개선 과제](docs/15_DEVELOPMENT_HISTORY.md)에서 변경 단계별 구현·미구현 범위를 확인할 수 있습니다.

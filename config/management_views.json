@@ -1,0 +1,15 @@
+{
+  "version":"1.0",
+  "count_unit":"원본 시트의 명칭이 있는 행. 업무별 신청 고유 건수·공식 전수 통계로 확정하지 않음",
+  "sheets":[
+    {"name":"방법론","book":"management","unit":"방법론 신청","region":"공통","title":4,"key":2,"date":5,"type":8,"status":11,"stage":14,"owner":19,"method_lookup":true},
+    {"name":"국내평가","book":"management","unit":"사업 평가","region":"국내","title":8,"key":3,"date":26,"type":4,"sector":18,"status":28,"stage":30,"owner":34},
+    {"name":"국외평가","book":"management","unit":"사업 평가","region":"국외","title":4,"key":2,"date":11,"type":7,"status":16,"stage":17,"owner":21},
+    {"name":"국내인증","book":"management","unit":"감축량 인증","region":"국내","title":4,"key":2,"date":28,"type":9,"sector":22,"status":29,"stage":32,"owner":35},
+    {"name":"국외인증","book":"management","unit":"감축량 인증","region":"국외","title":4,"key":2,"date":24,"status":12,"stage":13,"owner":17},
+    {"name":"(비공개)국내평가","book":"disclosure","unit":"사업 비공개 신청","region":"국내","title":3,"key":1,"date":5,"type":2,"status":8,"stage":17,"owner":20},
+    {"name":"(비공개)국외평가","book":"disclosure","unit":"사업 비공개 신청","region":"국외","title":3,"key":1,"date":6,"type":2,"status":11,"stage":17,"owner":20},
+    {"name":"(비공개)국내인증","book":"disclosure","unit":"인증 비공개 신청","region":"국내","title":4,"key":2,"date":8,"type":3,"status":11,"stage":19,"owner":22},
+    {"name":"(비공개)국외인증","book":"disclosure","unit":"인증 비공개 신청","region":"국외","title":4,"key":2,"date":11,"type":3,"status":16,"stage":21,"owner":24}
+  ]
+}

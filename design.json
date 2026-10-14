@@ -1,0 +1,29 @@
+{
+  "version": "2.2.0",
+  "default_profile": "innergen",
+  "purpose": "외부사업 방법론과 원장의 현황 조회 및 의사결정 지원",
+  "sources": [
+    {"id":"innergen","kind":"local_style_reference","title":"이너젠 design.md·design.json 및 통합 디자인 수치 기준 v17","adaptation":"슬라이드 좌표를 복제하지 않고 남색 구조·회색 구획·선택 강조를 웹에 맞춤"},
+    {"id":"kea","url":"https://tips.energy.or.kr/statistics/statistics.do","title":"한국에너지공단 EG-TIPS 통계 화면","adaptation":"통계별 분류·조회조건·출처와 자료실 동선을 참고한 자체 편집형. 공단 공식 색상 규격이라는 의미가 아님"},
+    {"id":"krds","url":"https://www.krds.go.kr/html/site/style/style_02.html","title":"KRDS 색상 및 접근성 지침","adaptation":"의미별 색상·명도 대비·문자 병기 원칙을 참조. 공식 인증이나 정부 운영 서비스가 아님"}
+  ],
+  "profiles": {
+    "innergen":{"label":"이너젠","primary":"#0F243F","accent":"#13387B","secondary":"#5778A4","panel":"#F2F4F7","border":"#CBD2DB","font":"Malgun Gothic, IBM Plex Sans KR, sans-serif","radius":4},
+    "kea":{"label":"에너지공단 참고형","primary":"#123B5D","accent":"#006B68","secondary":"#3B7E97","panel":"#EFF7F7","border":"#BCD4D8","font":"Malgun Gothic, sans-serif","radius":10},
+    "government":{"label":"정부 KRDS 참고형","primary":"#1D3155","accent":"#1D56BC","secondary":"#526D91","panel":"#EEF4FC","border":"#B9C5D6","font":"Pretendard GOV, Malgun Gothic, sans-serif","radius":6}
+  },
+  "typography":{"body_px":16,"large_body_px":18,"table_px":14,"note_px":13,"heading_px":24,"line_height":1.7},
+  "layout":{"max_width_px":1440,"panel_gap_px":24,"panel_padding_px":24,"control_min_height_px":44,"mobile_breakpoint_px":760},
+  "semantics":{"missing":"자료 미확보","confirmed_zero":"0","partial":"확인분","internal":"로컬 검토자료","danger":"#A21A24","warning":"#805400","body":"#263445","muted":"#526174"},
+  "components": {
+    "kpi":{"unit_required":true,"scope_required":true,"drilldown_same_population":true},
+    "filters":{"label_required":true,"active_condition_summary":true,"reset_required":true},
+    "chart":{"zero_baseline_counts":true,"data_table_required":true,"color_only_meaning":false},
+    "ledger":{"sticky_header":true,"numeric_alignment":"right","text_alignment":"left","mobile_overflow":"table_only"},
+    "dialog":{"escape_close":true,"source_and_date_required":true},
+    "materials":{"source_first":true,"cross_source_counts_additive":false,"raw_status_not_standard_stage":true},
+    "classified_management":{"multi_select":true,"facets":11,"native_excel_slicers":10,"charts":6,"cross_table_axes":"user_selected","source_row_navigation":true,"action_filters":true,"all_categories_accessible":true,"unit":"source_rows_not_deduplicated_applications"},
+    "source_coverage":{"file_grain":true,"separate_tool_and_downloaded_ors":true,"cells_and_rows_not_business_counts":true,"unavailable_visible":true}
+  },
+  "restrictions":["정부·공단 로고 및 공식 누리집 문구 미사용","비공개 원장 빌드·배포 금지","기관의 법적 상태·기한 자동 판단 금지"]
+}

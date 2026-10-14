@@ -2,6 +2,8 @@
 
 ## 실행 가능한 자동 테스트
 
+추가 자료 탐색 검사는 `node --test tests/web.test.mjs tests/materials.test.mjs`로 실행한다. `test_materials.py`는 합성 원장의 원본 행·신청·이력·오류·원문 상태 요약을 Python과 JS에서 비교한다. 새 검토 JSON은 `schemas/local_materials.schema.json`을 사용하며 표준 운영 dataset과 별도 계약이다. 공개 테스트 fixture에 내부 원장 값을 넣지 않는다.
+
 `python -m unittest discover -s tests -v`와 `node --test tests/web.test.mjs`. 결과는 verification/에 저장. 테스트마다 합성 원장을 사용.
 
 현재 Python 테스트에는 실행 시 Node 집계기를 호출하는 전체 snapshot 비교가 포함되어 있어 Node도 필요하다. `scripts/check_parity.py 입력.json`으로 특정 dataset의 8개 조건을 즉시 비교할 수 있다. 표준 XLSX의 열 순서·빈 ID·수식 입력·소수 순번·1904 날짜 체계 회귀검사와 실자료 매핑 규칙의 합성 테스트도 포함한다. 실제 원장 값은 테스트 fixture로 커밋하지 않는다.
