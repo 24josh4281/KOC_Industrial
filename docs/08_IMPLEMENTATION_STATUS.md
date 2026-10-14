@@ -1,5 +1,11 @@
 # 구현 상태
 
+## 2026-10-14 공개 GitHub 배포 확인
+
+- [PR #6](https://github.com/24josh4281/KOC_Industrial/pull/6)을 `main`에 병합했다(병합 커밋 `85cf99c`). 원격 [Validate dashboard](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347985)와 [Publish Excel and web demo](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347986)가 성공했고 Pages 배포 실행도 성공했다.
+- 공개 URL의 첫 화면은 새 번들을 참조하며 HTTP 200, 공개 Excel과 새 번들도 HTTP 200으로 제공되는 것을 확인했다. 배포 파일 목록은 공개용 코드·Excel·PDF 허용목록으로 점검했다. 로컬 업무 원장·55 MB 검토 JSON·독립 HTML·새 검증 Excel은 배포하지 않았다. [배포 검증](../verification/2026-10-14_publication_pr6.md)을 참고한다.
+- 공개 사이트의 실제 클릭·모바일 시각 QA, Excel 사용자 편집·전체 재계산, DB·인증·RLS, 자동 발송은 이 배포 확인에 포함하지 않는다. 아래의 이전 섹션에서 `push·배포 미실행`은 해당 작업 시점의 기록이며 이번 병합 상태로 대체된다.
+
 ## 2026-10-14 대시보드 도구 반영 확인·로컬 탐색 개선
 
 - ECharts와 TanStack Table은 기존 React 의존성과 실제 공개/표준 화면 사용을 확인했다. 로컬 관리 Tool 화면에도 ECharts 신청연도 그래프와 TanStack 원장 표 정렬·50행 페이지를 적용했다. 기존 11분류, 수치 버튼, 교차표, 원본 위치 연결은 유지한다. [도구별 상태](14_DASHBOARD_TOOLING_REVIEW.md)를 참고한다.
