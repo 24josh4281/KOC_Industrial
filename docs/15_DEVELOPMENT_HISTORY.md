@@ -13,6 +13,7 @@
 | 관리 Tool 분류 (`433a9f2`) | 원본 관리 Excel을 보존한 분석 시트·차트·슬라이서와 로컬 웹 11분류·교차표 | 원장행은 고유 신청 또는 등록 건수가 아님 |
 | 2026-10-14 후속 작업 | ORS 다운로드 파일의 보수적 갱신, 동일 입력 실행 방지, 근거 있는 수식 복구와 `기준 미확인` 분리, 원본 셀 전수 대조, 로컬 관리 화면의 ECharts 연도 그래프·TanStack 정렬 표 | [구현 상태](08_IMPLEMENTATION_STATUS.md)와 `verification/2026-10-14_*.md` 참조. DB와 공개 원장 반영은 수행하지 않음 |
 | 공개 배포 (`5747ddc`, PR #6, 병합 `85cf99c`) | 검증한 공개용 소스·문서·정적 번들을 `main`에 반영 | [CI 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347985), [Pages 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347986). 공개 첫 화면과 공개 Excel의 HTTP 응답 확인. 로컬 내부 JSON/HTML·Excel 검토본은 배포하지 않음 |
+| 이너젠 블루 디자인 (`9b16b8a`, PR #8, 병합 `0431e0b`) | 공개 웹·공개 Excel을 이너젠·이너캐리 통합 기준 v17·v22, 거버닝 규칙 v11로 재구성. Excel `통계` 연도 비교 결함 수정 | [CI 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452541), [Pages 성공](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452560). 배포 파일 해시가 병합 커밋과 일치. Excel 데스크톱 재계산은 미실행 |
 
 ## 현재 제공 방식
 

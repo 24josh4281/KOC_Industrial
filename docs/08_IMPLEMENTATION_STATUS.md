@@ -1,5 +1,11 @@
 # 구현 상태
 
+## 2026-10-15 이너젠 블루 공개 배포 확인
+
+- [PR #8](https://github.com/24josh4281/KOC_Industrial/pull/8)을 `main`에 병합했다(병합 커밋 `0431e0b`). 원격 [Validate dashboard](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452541)와 [Publish Excel and web demo](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452560)가 성공했고 Pages 배포 실행도 성공했다.
+- 공개 URL 첫 화면은 이너젠 블루 번들을 참조하고, 배포된 JS·CSS·공개 Excel의 SHA-256이 병합 커밋의 파일과 같다. [디자인 검증](../verification/2026-10-15_innergen_blue_design.md)을 참고한다.
+- 공개 사이트의 실제 클릭·모바일 시각 QA와 Excel 데스크톱 재계산은 이 확인에 포함하지 않는다. 아래 이너젠 블루 섹션의 배포 미실행 기록은 이번 병합 상태로 대체된다.
+
 ## 2026-10-14 공개 GitHub 배포 확인
 
 - [PR #6](https://github.com/24josh4281/KOC_Industrial/pull/6)을 `main`에 병합했다(병합 커밋 `85cf99c`). 원격 [Validate dashboard](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347985)와 [Publish Excel and web demo](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347986)가 성공했고 Pages 배포 실행도 성공했다.
