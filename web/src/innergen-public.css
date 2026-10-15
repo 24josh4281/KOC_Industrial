@@ -1,0 +1,144 @@
+/* Innergen blue (v17/v22) for the public view: label → noun title → one-line governing → body → source line.
+   Tokens come from design.json through useDesign(); other profiles keep working through the same variables. */
+.ig{--gap:16px;--pad:24px;--r:var(--theme-radius);font-family:var(--theme-font);color:var(--ink);background:#F6F8FC;border-top:3px solid var(--blue)}
+.ig .topbar{border-top:0;height:60px;background:white}
+.ig .brand-mark{border-radius:var(--r)}
+.ig .read-only{font-size:13px;color:var(--ink-muted)}
+.ig .shell{max-width:1312px;padding:32px 32px 24px}
+.ig h1,.ig h2,.ig h3{color:var(--navy);letter-spacing:-.4px}
+.ig h1{font-size:32px;line-height:1.3;font-weight:700}
+.ig h2{font-size:20px;line-height:1.45;font-weight:700}
+.ig h3{font-size:16px}
+.ig p{color:var(--ink)}
+.ig button,.ig .button,.ig input,.ig select{border-radius:var(--r)}
+.ig .button.primary{background:var(--blue);border-color:var(--blue)}
+.ig .button.primary:hover{background:var(--navy);border-color:var(--navy)}
+
+/* Section label: number + English/Korean label in accent, as in the deck section label. */
+.ig .ig-label{display:flex;align-items:center;gap:10px;margin:0 0 6px;font-size:12px;font-weight:700;letter-spacing:1.2px;color:var(--blue);text-transform:uppercase}
+.ig .ig-label b{display:inline-grid;place-items:center;min-width:26px;height:20px;padding:0 5px;background:var(--navy);color:white;font-size:11px;letter-spacing:.5px}
+
+/* Governing message box: one sentence, accent bold, light fill and line. */
+.ig .ig-governing{margin:12px 0 0;padding:11px 16px;background:var(--gov-fill);border:1px solid var(--gov-line);border-left:3px solid var(--blue);color:var(--blue);font-size:16px;font-weight:700;line-height:1.55;word-break:keep-all}
+.ig .ig-governing-page{font-size:18px;padding:13px 18px;margin-top:16px}
+.ig .ig-source{margin:20px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:12px;line-height:1.6;color:var(--ink-muted);overflow-wrap:anywhere}
+.ig .ig-source::before{content:'';display:inline-block;width:6px;height:6px;margin:0 8px 1px 0;background:var(--secondary)}
+
+/* Cover header */
+.ig .ig-cover{align-items:flex-end;margin-bottom:var(--gap);padding-bottom:24px;border-bottom:1px solid var(--line)}
+.ig .ig-cover>div:first-child{flex:1;min-width:0}
+.ig .ig-cover .lead{font-size:14px;margin-top:12px;color:var(--ink-muted)}
+.ig .ig-utility{display:flex;justify-content:space-between;align-items:flex-end;gap:var(--gap);flex-wrap:wrap;margin-bottom:var(--gap)}
+.ig .ig-utility .design-controls,.ig .ig-utility .document-nav{margin:0;padding:0;border:0;align-items:center}
+.ig .ig-utility .design-controls label{display:flex;align-items:center;gap:10px;font-size:13px;font-weight:600;color:var(--ink)}
+.ig .ig-utility .design-controls select{min-width:170px}
+.ig .ig-utility .button,.ig .ig-utility button,.ig .ig-utility select{min-height:40px}
+
+/* Sticky numbered section tabs */
+.ig .section-nav{gap:0;background:#FFFFFFF2;border:1px solid var(--line);border-top:2px solid var(--navy);margin-bottom:var(--gap);min-height:50px;padding:0 8px}
+.ig .section-nav a{gap:8px;padding:0 18px;font-size:14px;color:var(--ink);border-bottom-width:3px}
+.ig .section-nav a b{font-size:11px;color:var(--secondary);font-weight:700}
+.ig .section-nav a:hover b,.ig .section-nav a:focus b{color:var(--blue)}
+
+/* Scope banner and filters */
+.ig .data-banner{border-radius:var(--r);background:white;border:1px solid var(--line);border-left:3px solid var(--blue);padding:14px 20px;margin-bottom:var(--gap)}
+.ig .data-banner strong{color:var(--navy);font-size:14px}
+.ig .data-banner p{font-size:13px;color:var(--ink-muted)}
+.ig .ig-filters{display:block;border-radius:var(--r);padding:20px var(--pad);margin-bottom:var(--gap)}
+.ig .ig-filter-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px}
+.ig .ig-filter-title .ig-label{margin:0}
+.ig .ig-filter-title button{min-height:36px}
+.ig .public-filters .filter-fields{gap:12px 16px}
+.ig .filter-fields label{font-size:13px;font-weight:600;color:var(--ink)}
+.ig .active-conditions{display:flex;flex-wrap:wrap;align-items:center;gap:6px;margin:16px 0 0;padding-top:14px;border-top:1px dashed var(--line);font-size:13px}
+.ig .active-conditions b{color:var(--navy);margin-right:6px}
+.ig .condition-chip{border-radius:var(--r);background:var(--theme-panel);border:1px solid var(--gov-line);color:var(--navy);font-size:12px;padding:3px 10px}
+.ig .public-definition{margin:12px 0 0;font-size:12px;color:var(--ink-muted)}
+
+/* KPI band (P21 navy figure strip) */
+.ig .kpi-band{border-radius:var(--r);box-shadow:none;padding:0;margin-bottom:var(--gap);border-top:3px solid var(--blue)}
+.ig .metric{padding:20px 22px 18px;border-right:1px solid #FFFFFF1F}
+.ig .metric:hover,.ig .metric:focus-visible{background:#FFFFFF10}
+.ig .metric-label{font-size:13px;color:#D2DCFA}
+.ig .metric-value{font-size:40px;font-weight:700;margin:12px 0 8px}
+.ig .metric-value small{font-size:13px;color:#AFC0EC}
+.ig .metric-note{font-size:12px;color:#AFC0EC;min-height:0}
+
+/* Key takeaways (s01 exec summary) */
+.ig .ig-summary{background:white;border:1px solid var(--line);border-radius:var(--r);padding:20px var(--pad);margin-bottom:var(--gap)}
+.ig .ig-summary h2.ig-label{font-size:12px;line-height:1.4;color:var(--blue)}
+.ig .ig-summary ol{list-style:none;margin:12px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--gap)}
+.ig .ig-summary li{display:flex;gap:14px;padding:16px 18px;background:var(--gov-fill);border-top:2px solid var(--navy);min-width:0}
+.ig .ig-num{font-size:22px;font-weight:700;color:var(--blue);line-height:1.2;font-variant-numeric:tabular-nums}
+.ig .ig-summary li b{display:block;color:var(--navy);font-size:15px;margin-bottom:4px}
+.ig .ig-summary li p{margin:0;font-size:14px;line-height:1.65;color:var(--ink);word-break:keep-all}
+
+/* Panels as report pages */
+.ig .analysis-grid,.ig .insight-grid{gap:var(--gap);margin-bottom:var(--gap)}
+.ig .panel{border-radius:var(--r);padding:var(--pad);display:flex;flex-direction:column}
+.ig .ig-panel{margin-bottom:0}
+.ig .public-status,.ig .public-records{margin-bottom:var(--gap)}
+.ig .ig-head{display:flex;justify-content:space-between;align-items:flex-start;gap:var(--gap)}
+.ig .ig-head .segmented{flex-shrink:0}
+.ig .ig-body{flex:1;min-width:0}
+.ig .panel-intro{font-size:13px;color:var(--ink-muted);margin:14px 0 0}
+.ig .chart-caption{font-size:12px;color:var(--ink-muted)}
+.ig .annual-chart{height:320px;margin-top:14px}
+.ig .segmented{border-radius:var(--r);background:#F1F4F9;border:1px solid var(--line);padding:2px}
+.ig .segmented button{border-radius:var(--r);font-size:13px;min-height:34px}
+.ig .segmented button[aria-pressed=true]{background:var(--navy);color:white;box-shadow:none}
+
+/* Horizontal bars: lead item in navy, others accent */
+.ig .public-bars{gap:2px;margin:12px 0}
+.ig .public-bar{border-bottom:1px solid #F1F4F9;border-radius:0;background:white;padding:9px 0}
+.ig .public-bar:not(:disabled):hover{background:var(--gov-fill)}
+.ig .bar-rail{height:10px;background:#EEF2F8;border-radius:0}
+.ig .bar-rail i{background:var(--secondary)}
+.ig .public-bar.is-lead .bar-rail i{background:var(--blue)}
+.ig .public-bar strong{font-size:18px}
+.ig .public-bar small{font-size:11px;color:var(--ink-muted)}
+
+.ig .comparison-values{margin:20px 0 16px}
+.ig .comparison-values strong{font-size:40px;font-weight:700;color:var(--navy)}
+.ig .comparison-note{border-radius:var(--r);background:var(--gov-fill);border:1px solid var(--gov-line);color:var(--blue)}
+.ig .insight-value{font-size:30px;font-weight:700}
+.ig .registration-split button{border-radius:var(--r);background:var(--gov-fill);border-top:2px solid var(--secondary)}
+.ig .registration-split button:hover{border-top-color:var(--blue)}
+.ig .recent-list b{font-size:12px;color:var(--blue)}
+.ig .recent-list small{font-size:14px;color:var(--ink)}
+.ig .recent-list time{font-size:12px;color:var(--ink-muted);font-variant-numeric:tabular-nums}
+
+/* Missing data is not zero: dashed cell + text */
+.ig .availability-grid>div{background:white;border:1px dashed #94A3B8;border-radius:var(--r);padding:18px}
+.ig .availability-grid small{font-size:13px;color:var(--ink)}
+.ig .availability-grid strong{font-size:16px;color:var(--ink-muted)}
+
+/* Ledger table: navy head, zebra, tabular numbers */
+.ig .table-wrap{border-radius:var(--r)}
+.ig .ledger-table th,.ig .public-records th{background:var(--navy);color:white;font-weight:600;border-bottom:0}
+.ig .ledger-table td,.ig .ledger-table th{padding:12px 14px}
+.ig .ledger-table td:nth-child(4){font-variant-numeric:tabular-nums;white-space:nowrap}
+.ig .search-field{border-radius:var(--r)}
+.ig .list-context b{color:var(--blue)}
+.ig .chart-data th{background:var(--theme-panel);color:var(--navy)}
+
+.ig .record-dialog{border-radius:var(--r);border-top:3px solid var(--blue)}
+.ig footer{border-top:2px solid var(--navy);font-size:12px;color:var(--ink-muted);margin-top:24px}
+
+@media(max-width:1100px){.ig .ig-summary ol{grid-template-columns:1fr}.ig .metric{padding:16px 14px}.ig .metric-value{font-size:32px}}
+@media(max-width:760px){
+ .ig .shell{padding:20px 16px}
+ .ig .topbar{padding:0 16px}
+ .ig .wordmark b{white-space:nowrap}
+ .ig .read-only{display:none}
+ .ig h1{font-size:26px}
+ .ig .ig-cover{flex-direction:column;align-items:stretch}
+ .ig .ig-governing{font-size:15px;padding:10px 12px}
+ .ig .ig-governing-page{font-size:16px}
+ .ig .section-nav{padding:0}
+ .ig .section-nav a{padding:0 12px}
+ .ig .panel{padding:18px 16px}
+ .ig .ig-head{flex-direction:column}
+ .ig .annual-chart{height:280px}
+}
+@media print{.ig{border-top:0;background:white}.ig .section-nav,.ig .ig-utility,.ig .header-actions{display:none}.ig .panel,.ig .kpi-band,.ig .ig-summary{break-inside:avoid}}
