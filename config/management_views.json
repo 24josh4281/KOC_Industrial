@@ -8,8 +8,8 @@
     {"name":"국내인증","book":"management","unit":"감축량 인증","region":"국내","title":4,"key":2,"date":28,"type":9,"sector":22,"status":29,"stage":32,"owner":35},
     {"name":"국외인증","book":"management","unit":"감축량 인증","region":"국외","title":4,"key":2,"date":24,"status":12,"stage":13,"owner":17},
     {"name":"(비공개)국내평가","book":"disclosure","unit":"사업 비공개 신청","region":"국내","title":3,"key":1,"date":5,"type":2,"status":8,"stage":17,"owner":20},
-    {"name":"(비공개)국외평가","book":"disclosure","unit":"사업 비공개 신청","region":"국외","title":3,"key":1,"date":6,"type":2,"status":11,"stage":17,"owner":20},
+    {"name":"(비공개)국외평가","book":"disclosure","unit":"사업 비공개 신청","region":"국외","title":3,"key":1,"date":6,"type":2,"status":5,"stage":17,"owner":20},
     {"name":"(비공개)국내인증","book":"disclosure","unit":"인증 비공개 신청","region":"국내","title":4,"key":2,"date":8,"type":3,"status":11,"stage":19,"owner":22},
-    {"name":"(비공개)국외인증","book":"disclosure","unit":"인증 비공개 신청","region":"국외","title":4,"key":2,"date":11,"type":3,"status":16,"stage":21,"owner":24}
+    {"name":"(비공개)국외인증","book":"disclosure","unit":"인증 비공개 신청","region":"국외","title":4,"key":2,"date":11,"type":3,"status":10,"stage":21,"owner":24}
   ]
 }
