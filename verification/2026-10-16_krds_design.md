@@ -23,6 +23,10 @@
 
 캡처·COM 결과 파일: `outputs/2026-10-16_krds_design/work/`(`web_1440.png`, `web_390.png`, `excel_com_inventory.txt`, `excel_com_recalc.txt`, `checks.json`, 생성 도구 렌더 5장).
 
+## 추가 확인: 공개 화면에 비공개 신청 자료 연결(2026-10-16)
+
+공개 화면 07 `연도별 신청 현황`의 `신청 자료 불러오기`에 저장소 밖 로컬 자료 `outputs/2026-10-15_application_status_v8/dashboard-data.json`(10개 파일·44개 시트, 반영일 2026-10-14, 55 MB)을 Playwright로 넣어 확인했다. 기본 `2026년 신청 현황`은 53건(방법론 4·사업 평가 21·감축량 인증 26·사업 비공개 1·인증 비공개 1, 처리 단계 보완요청 32·평가중 13 등), `전체 기간`은 3,419건으로 바뀌었고 신청일 없는 내역 541건은 별도 링크로 분리됐다. 경고 없음, 외부 요청 없음(파일은 브라우저 안에서만 읽음). 캡처와 수치는 `outputs/2026-10-16_krds_design/work/progress/`에 두었다. 자료 자체는 공개 저장소·Pages·공개 Excel에 넣지 않는다.
+
 ## 미실행·해석 한계
 
 - 커밋·푸시·PR·`scripts/stage_public_site.py`(정적 번들 복사)·Pages 배포는 하지 않았다. 작업 브랜치 `docs/record-pr8-deployment`에는 이 작업 이전의 미커밋 변경(관리 화면·비공개 진행 패널 등)이 함께 있다.
