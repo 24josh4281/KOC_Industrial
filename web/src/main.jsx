@@ -66,5 +66,5 @@ function App() {
   </div>;
 }
 const view=new URLSearchParams(location.search).get('view');
-const screen=view==='materials'||(document.getElementById('local-materials-data')&&!view)?<MaterialsDashboard/>:view==='manual'||view==='insights'?<Reports type={view}/>:view==='template'?<><a className="button" href="?view=public">공개 실자료 분석으로 돌아가기</a><App/></>:<PublicDashboard/>;
+const screen=view==='materials'?<MaterialsDashboard/>:view==='manual'||view==='insights'?<Reports type={view}/>:view==='template'?<><a className="button" href="?view=public">공개 실자료 분석으로 돌아가기</a><App/></>:<PublicDashboard/>;
 createRoot(document.getElementById('root')).render(<QueryClientProvider client={qc}>{screen}</QueryClientProvider>);

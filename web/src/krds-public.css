@@ -1,0 +1,149 @@
+/* KRDS (정부24 계열) reference profile for the public view. Applies only when design.json profile = government;
+   innergen-public.css keeps the Innergen blue profile intact for switching back.
+   Tokens follow the KRDS colour/typography guide (primary #246BEB, secondary #003675, gray scale). No government
+   logo, masthead text or certification mark is used: this is a reference style, not an official service. */
+.ig[data-design=government]{--g90:#1E2124;--g80:#33363D;--g70:#464C53;--g60:#6D7882;--g50:#8A949E;--g30:#CDD1D5;--g20:#E6E8EA;--g10:#F4F5F6;--g5:#F8F8F8;--p:#246BEB;--pd:#0B50D0;--p5:#ECF2FE;--p10:#D3E1FB;--p30:#8DB3F5;--s:#003675;--danger:#EB003B;--rk:12px;--rs:8px;background:var(--g5);border-top:0;color:var(--g80);font-size:17px}
+.ig[data-design=government] .topbar{height:72px;background:white;border-bottom:1px solid var(--g20)}
+.ig[data-design=government] .brand-mark{border-radius:8px;background:linear-gradient(135deg,var(--p),var(--s));color:white}
+.ig[data-design=government] .wordmark b{color:var(--g90)}
+.ig[data-design=government] .read-only{font-size:15px;color:var(--g60)}
+.ig[data-design=government] .shell{max-width:1440px;padding:24px 48px 32px}
+.ig[data-design=government] h1{font-size:40px;color:var(--g90);letter-spacing:-.5px;line-height:1.3}
+.ig[data-design=government] h2{font-size:22px;color:var(--g90);letter-spacing:-.3px}
+.ig[data-design=government] h3{color:var(--g90)}
+.ig[data-design=government] p,.ig[data-design=government] .lead{color:var(--g70)}
+.ig[data-design=government] .ig-cover{border-bottom:0;padding-bottom:4px;align-items:flex-end}
+.ig[data-design=government] .ig-cover .lead{font-size:19px;color:var(--g70);margin-top:10px}
+
+/* Labels, governing message, source line */
+.ig[data-design=government] .ig-label{color:var(--p);font-size:15px;letter-spacing:0;text-transform:none;font-weight:700;gap:8px}
+.ig[data-design=government] .ig-label b{background:var(--s);border-radius:6px;min-width:28px;height:22px;font-size:12px;letter-spacing:0}
+.ig[data-design=government] .ig-governing{position:relative;margin-top:14px;padding:14px 18px 14px 50px;background:var(--p5);border:1px solid var(--p10);border-left:1px solid var(--p10);border-radius:var(--rk);color:var(--pd);font-size:16px;font-weight:600;line-height:1.6}
+.ig[data-design=government] .ig-governing::before{content:'!';position:absolute;left:18px;top:50%;transform:translateY(-50%);width:22px;height:22px;border-radius:50%;background:var(--s);color:white;font-size:13px;font-weight:700;display:grid;place-items:center;line-height:1}
+.ig[data-design=government] .ig-governing-page{font-size:18px;padding:16px 20px 16px 52px}
+.ig[data-design=government] .panel .ig-governing{background:var(--g5);border-color:var(--g20);color:var(--g90);font-size:15px;padding-left:18px}
+.ig[data-design=government] .panel .ig-governing::before{display:none}
+.ig[data-design=government] .ig-source{color:var(--g60);font-size:13px;border-top:1px solid var(--g20)}
+.ig[data-design=government] .ig-source::before{display:none}
+
+/* Controls: 48px primary actions, 8px radius, outline secondary */
+.ig[data-design=government] button,.ig[data-design=government] .button{border-radius:var(--rs);font-weight:600;color:var(--g80);border:1px solid var(--g30);background:white;font-size:15px}
+.ig[data-design=government] button:hover,.ig[data-design=government] .button:hover{background:var(--g5);border-color:var(--g50)}
+.ig[data-design=government] .button.primary,.ig[data-design=government] button.primary{background:var(--p);border-color:var(--p);color:white}
+.ig[data-design=government] .button.primary:hover,.ig[data-design=government] button.primary:hover{background:var(--pd);border-color:var(--pd)}
+.ig[data-design=government] .header-actions .button,.ig[data-design=government] .header-actions button{min-height:48px;padding:0 20px;font-size:16px}
+.ig[data-design=government] .text-button,.ig[data-design=government] button.text-button{border:0;background:none;color:var(--p);text-decoration:underline;text-underline-offset:3px;padding:4px 2px}
+.ig[data-design=government] .text-button:hover{background:none;color:var(--pd)}
+.ig[data-design=government] input,.ig[data-design=government] select{border-radius:var(--rs);border:1px solid var(--g30);min-height:48px;color:var(--g90);font-size:16px;padding:0 14px}
+.ig[data-design=government] .ig-utility .button,.ig[data-design=government] .ig-utility button,.ig[data-design=government] .ig-utility select{min-height:44px}
+.ig[data-design=government] .ig-utility .design-controls label{color:var(--g70);font-size:15px}
+.ig[data-design=government] .section-nav{background:white;border:1px solid var(--g20);border-top:1px solid var(--g20);border-radius:var(--rk);min-height:56px;padding:0 12px}
+.ig[data-design=government] .section-nav a{font-size:17px;font-weight:600;color:var(--g70);padding:0 20px;border-bottom-width:3px}
+.ig[data-design=government] .section-nav a b{color:var(--g50);font-size:12px}
+.ig[data-design=government] .section-nav a:hover,.ig[data-design=government] .section-nav a:focus{color:var(--p)}
+.ig[data-design=government] .data-banner{border-radius:var(--rk);border:1px solid var(--g20);border-left:1px solid var(--g20);background:white;padding:18px 24px}
+.ig[data-design=government] .data-banner strong{color:var(--g90);font-size:16px}
+.ig[data-design=government] .data-banner p{font-size:15px;color:var(--g60)}
+.ig[data-design=government] .data-indicator{background:var(--p)}
+
+/* Filter card */
+.ig[data-design=government] .ig-filters{border-radius:var(--rk);border:1px solid var(--g20);background:white;padding:24px 28px}
+.ig[data-design=government] .ig-filter-title button{min-height:40px;border:1px solid var(--p);color:var(--p);background:white;padding:0 14px}
+.ig[data-design=government] .filter-fields label{font-size:15px;color:var(--g80);font-weight:600}
+.ig[data-design=government] .active-conditions{border-top:1px solid var(--g20);font-size:15px;color:var(--g60);gap:8px}
+.ig[data-design=government] .active-conditions b{color:var(--g80)}
+.ig[data-design=government] .condition-chip{border-radius:999px;background:white;border:1px solid var(--g30);color:var(--g80);font-size:15px;padding:6px 12px}
+.ig[data-design=government] .public-definition{font-size:14px;color:var(--g60)}
+
+/* KPI: white cards instead of the navy strip */
+.ig[data-design=government] .kpi-band{background:transparent;border:0;border-top:0;border-radius:0;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:16px;padding:0;margin-bottom:16px;box-shadow:none}
+.ig[data-design=government] .metric{background:white;border:1px solid var(--g20);border-right:1px solid var(--g20);border-radius:var(--rk);padding:22px 24px 20px;color:var(--g90);text-align:left}
+.ig[data-design=government] .metric:hover,.ig[data-design=government] .metric:focus-visible{background:var(--p5);border-color:var(--p10)}
+.ig[data-design=government] .metric-label{color:var(--g70);font-size:15px;font-weight:600}
+.ig[data-design=government] .metric-arrow{color:var(--p)}
+.ig[data-design=government] .metric-value{color:var(--g90);font-size:36px;font-weight:700;letter-spacing:-1px;margin:10px 0 6px}
+.ig[data-design=government] .metric-value small{color:var(--g60);font-size:15px;font-weight:600}
+.ig[data-design=government] .metric-note{color:var(--g60);font-size:14px}
+
+/* Key summary: info box with numbered items */
+.ig[data-design=government] .ig-summary{background:var(--p5);border:1px solid var(--p10);border-radius:var(--rk);padding:24px 28px}
+.ig[data-design=government] .ig-summary h2.ig-label{font-size:19px;color:var(--s)}
+.ig[data-design=government] .ig-summary li{background:white;border:1px solid var(--p10);border-top:1px solid var(--p10);border-radius:var(--rs);padding:16px 18px;gap:12px}
+.ig[data-design=government] .ig-num{font-size:14px;color:var(--p);background:var(--p5);border:1px solid var(--p10);border-radius:6px;width:28px;height:28px;display:grid;place-items:center;flex:none}
+.ig[data-design=government] .ig-summary li b{color:var(--g90);font-size:16px}
+.ig[data-design=government] .ig-summary li p{font-size:15px;color:var(--g80)}
+
+/* Panels (design-system.css gives the government profile a 3px navy top rule and a square KPI band; KRDS cards drop both) */
+.ig[data-design=government] .panel{border-radius:var(--rk);border:1px solid var(--g20);border-top:1px solid var(--g20);padding:28px;background:white}
+.ig[data-design=government] .ig-head h2{font-size:22px}
+.ig[data-design=government] .panel-intro{font-size:15px;color:var(--g60)}
+.ig[data-design=government] .chart-caption{font-size:14px;color:var(--g60)}
+.ig[data-design=government] .segmented{border-radius:var(--rs);background:white;border:1px solid var(--g30);padding:0;overflow:hidden}
+.ig[data-design=government] .segmented button{border:0;border-radius:0;min-height:40px;font-size:15px;color:var(--g70);padding:0 14px;background:white}
+.ig[data-design=government] .segmented button[aria-pressed=true]{background:var(--p);color:white;box-shadow:none}
+.ig[data-design=government] .bar-rail{height:16px;border-radius:4px;background:var(--g10)}
+.ig[data-design=government] .bar-rail i{background:var(--p30);border-radius:4px}
+.ig[data-design=government] .public-bar.is-lead .bar-rail i{background:var(--p)}
+.ig[data-design=government] .public-bar{border-bottom:0;padding:8px 0}
+.ig[data-design=government] .public-bar:not(:disabled):hover{background:var(--g5)}
+.ig[data-design=government] .public-bar>span:first-child{font-size:15px;color:var(--g80)}
+.ig[data-design=government] .public-bar strong{color:var(--g90);font-size:18px}
+.ig[data-design=government] .public-bar small{color:var(--g60);font-size:13px}
+.ig[data-design=government] .comparison-values>div{background:var(--g5);border-radius:var(--rk);padding:18px 20px}
+.ig[data-design=government] .comparison-values small{color:var(--g70);font-weight:600;font-size:14px}
+.ig[data-design=government] .comparison-values strong{color:var(--g90);font-size:36px}
+.ig[data-design=government] .comparison-note{display:inline-block;background:var(--p5);border:0;border-radius:6px;color:var(--pd);padding:6px 12px;font-size:15px}
+.ig[data-design=government] .insight-value{color:var(--g90);font-size:30px}
+.ig[data-design=government] .insight-value small{color:var(--g60);font-size:14px}
+.ig[data-design=government] .registration-split button{border-radius:10px;border:1px solid var(--g20);border-top:1px solid var(--g20);background:white;padding:14px 16px}
+.ig[data-design=government] .registration-split button:hover{border-color:var(--p10);background:var(--p5)}
+.ig[data-design=government] .registration-split strong{color:var(--g90);font-size:24px}
+.ig[data-design=government] .registration-split small{color:var(--g60);font-size:13px}
+.ig[data-design=government] .recent-list b{color:var(--p);font-size:15px}
+.ig[data-design=government] .recent-list small{color:var(--g80);font-size:15px}
+.ig[data-design=government] .recent-list time{color:var(--g60);font-size:15px}
+.ig[data-design=government] .recent-list button{border-bottom:1px solid var(--g20);border-radius:0}
+.ig[data-design=government] .recent-list button:hover{background:var(--g5);border-color:var(--g20)}
+.ig[data-design=government] .watch-control label{font-size:15px;color:var(--g80);font-weight:600}
+.ig[data-design=government] .watch-control button{border:1px solid var(--p);color:var(--p);min-height:48px;padding:0 18px;font-size:16px;background:white}
+
+/* Tables: gray head with a navy top rule, underlined code links */
+.ig[data-design=government] .table-wrap{border-radius:var(--rk);border:1px solid var(--g20)}
+.ig[data-design=government] .ledger-table th,.ig[data-design=government] .public-records th,.ig[data-design=government] table th{background:var(--g10);color:var(--g90);font-weight:700;border-top:2px solid var(--s);border-bottom:1px solid var(--g30);font-size:15px;padding:14px 12px}
+.ig[data-design=government] .ledger-table td,.ig[data-design=government] table td{font-size:15px;padding:14px 12px;border-bottom:1px solid var(--g20);color:var(--g80)}
+.ig[data-design=government] .ledger-table tbody tr:nth-child(even){background:white}
+.ig[data-design=government] .ledger-table tbody tr:hover{background:var(--g5)}
+.ig[data-design=government] .ledger-table td .text-button{color:var(--p);font-weight:700;font-size:15px}
+.ig[data-design=government] .search-field{border-radius:var(--rs)}
+.ig[data-design=government] .list-context{font-size:15px;color:var(--g70)}
+.ig[data-design=government] .list-context b{color:var(--g90)}
+.ig[data-design=government] .chart-data summary{color:var(--g80);font-weight:600}
+.ig[data-design=government] .chart-data th{background:var(--g10);color:var(--g90)}
+.ig[data-design=government] .record-dialog{border-radius:16px;border:1px solid var(--g20);border-top:1px solid var(--g20)}
+.ig[data-design=government] .public-dialog h2{color:var(--g90)}
+
+/* Private progress panel (07) inside the public page */
+.ig[data-design=government] .progress-title{color:var(--g90)}
+.ig[data-design=government] .progress-cards>div{background:white;border:1px solid var(--g20);border-radius:10px}
+.ig[data-design=government] .progress-cards strong{color:var(--g90)}
+.ig[data-design=government] .private-progress th{background:var(--g10);color:var(--g90);border-top:2px solid var(--s)}
+.ig[data-design=government] .progress-stages button{border-radius:999px;border:1px solid var(--g30);background:white;color:var(--g80)}
+.ig[data-design=government] .progress-detail{background:var(--g5);border:1px solid var(--g20);border-radius:var(--rs)}
+.ig[data-design=government] .private-progress [aria-label="신청연도"]{border-color:var(--p)}
+
+.ig[data-design=government] footer{border-top:1px solid var(--g20);background:white;padding:20px 24px;font-size:14px;color:var(--g60);border-radius:var(--rk)}
+
+@media(max-width:1100px){.ig[data-design=government] .kpi-band{grid-template-columns:repeat(3,minmax(0,1fr))}.ig[data-design=government] .metric-value{font-size:30px}}
+@media(max-width:760px){
+ .ig[data-design=government] .shell{padding:16px}
+ .ig[data-design=government] .topbar{padding:0 16px}
+ .ig[data-design=government] h1{font-size:28px}
+ .ig[data-design=government] .kpi-band{grid-template-columns:1fr 1fr;gap:10px}
+ .ig[data-design=government] .metric{padding:16px}
+ .ig[data-design=government] .metric-value{font-size:26px}
+ .ig[data-design=government] .ig-governing,.ig[data-design=government] .ig-governing-page{font-size:15px;padding:12px 14px 12px 44px}
+ .ig[data-design=government] .ig-governing::before{left:14px}
+ .ig[data-design=government] .section-nav a{font-size:15px;padding:0 12px}
+ .ig[data-design=government] .panel{padding:18px 16px;border-radius:10px}
+}
+@media print{.ig[data-design=government]{background:white}}

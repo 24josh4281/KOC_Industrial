@@ -1,5 +1,15 @@
 # 구현 상태
 
+## 2026-10-15 회의 요구사항 검증 및 로컬 v9
+
+회의록·제품 기술서를 실제 원본 2종 및 ORS 7월·9월 ZIP과 대조했다. 국외 비공개 신청의 처리상태가 다른 업무 열을 참조하던 오류 두 곳을 수정했다. 로컬 v9에는 전 기간 진행·확인 목록, 신청연도·월별 집계, 배정/현장방문 원문, 선택형 내부 관찰, ORS 시점 비교와 요구사항 검증 보고서를 별도 제공한다. 표준 신청 회차 확정·규정 기한·공식 승인 실적 및 공동편집은 아직 미구현/미확정이다. [검증 기록](../verification/2026-10-15_meeting_requirements.md)을 참고한다. 기존 원본·v8·자동 갱신 포인터를 보존하며 이번 공개 배포는 없다.
+
+## 2026-10-15 이너젠 블루 공개 배포 확인
+
+- [PR #8](https://github.com/24josh4281/KOC_Industrial/pull/8)을 `main`에 병합했다(병합 커밋 `0431e0b`). 원격 [Validate dashboard](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452541)와 [Publish Excel and web demo](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452560)가 성공했고 Pages 배포 실행도 성공했다.
+- 공개 URL 첫 화면은 이너젠 블루 번들을 참조하고, 배포된 JS·CSS·공개 Excel의 SHA-256이 병합 커밋의 파일과 같다. [디자인 검증](../verification/2026-10-15_innergen_blue_design.md)을 참고한다.
+- 공개 사이트의 실제 클릭·모바일 시각 QA와 Excel 데스크톱 재계산은 이 확인에 포함하지 않는다. 아래 이너젠 블루 섹션의 배포 미실행 기록은 이번 병합 상태로 대체된다.
+
 ## 2026-10-14 공개 GitHub 배포 확인
 
 - [PR #6](https://github.com/24josh4281/KOC_Industrial/pull/6)을 `main`에 병합했다(병합 커밋 `85cf99c`). 원격 [Validate dashboard](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347985)와 [Publish Excel and web demo](https://github.com/24josh4281/KOC_Industrial/actions/runs/38541347986)가 성공했고 Pages 배포 실행도 성공했다.

@@ -1,17 +1,17 @@
 {
-  "version": "2.3.0",
-  "default_profile": "innergen_blue",
+  "version": "2.5.0",
+  "default_profile": "government",
   "purpose": "외부사업 방법론과 원장의 현황 조회 및 의사결정 지원",
   "sources": [
-    {"id":"innergen","kind":"local_style_reference","title":"이너젠 design.md·design.json 및 통합 디자인 수치 기준 v17","adaptation":"슬라이드 좌표를 복제하지 않고 남색 구조·회색 구획·선택 강조를 웹에 맞춤"},
-    {"id":"kea","url":"https://tips.energy.or.kr/statistics/statistics.do","title":"한국에너지공단 EG-TIPS 통계 화면","adaptation":"통계별 분류·조회조건·출처와 자료실 동선을 참고한 자체 편집형. 공단 공식 색상 규격이라는 의미가 아님"},
-    {"id":"krds","url":"https://www.krds.go.kr/html/site/style/style_02.html","title":"KRDS 색상 및 접근성 지침","adaptation":"의미별 색상·명도 대비·문자 병기 원칙을 참조. 공식 인증이나 정부 운영 서비스가 아님"}
+    {"id":"krds","url":"https://www.krds.go.kr/html/site/style/style_02.html","title":"KRDS 색상·타이포그래피·토큰 지침(정부24 계열)","adaptation":"기본 파랑·남색·회색 단계, 12px 카드·8px 조작 요소, 회색 표 머리와 남색 상단선, 문자 병기 원칙을 참조한 자체 편집형. 공식 인증이나 정부 운영 서비스가 아니며 로고·공식 누리집 문구를 쓰지 않음"},
+    {"id":"innergen","kind":"local_style_reference","title":"이너젠 design.md·design.json 및 통합 디자인 수치 기준 v17·v22","adaptation":"슬라이드 좌표를 복제하지 않고 남색 구조·회색 구획·선택 강조를 웹에 맞춤. 2026-10-16부터 전환용 프로필로 유지"},
+    {"id":"kea","url":"https://tips.energy.or.kr/statistics/statistics.do","title":"한국에너지공단 EG-TIPS 통계 화면","adaptation":"통계별 분류·조회조건·출처와 자료실 동선을 참고한 자체 편집형. 공단 공식 색상 규격이라는 의미가 아님"}
   ],
   "profiles": {
+    "government":{"label":"정부 KRDS 참고형","primary":"#003675","accent":"#246BEB","secondary":"#003675","panel":"#ECF2FE","border":"#E6E8EA","governing_fill":"#ECF2FE","governing_line":"#D3E1FB","text":"#33363D","muted":"#6D7882","font":"Pretendard GOV, Pretendard, Malgun Gothic, sans-serif","radius":12},
     "innergen_blue":{"label":"이너젠 블루","primary":"#0B1739","accent":"#2F62F0","secondary":"#7B9BF7","panel":"#EEF2FF","border":"#E2E8F0","governing_fill":"#F3F6FF","governing_line":"#DFE7FF","text":"#475569","muted":"#64748B","font":"IBM Plex Sans KR, Pretendard, Malgun Gothic, sans-serif","radius":0},
     "innergen":{"label":"이너젠","primary":"#0F243F","accent":"#13387B","secondary":"#5778A4","panel":"#F2F4F7","border":"#CBD2DB","font":"Malgun Gothic, IBM Plex Sans KR, sans-serif","radius":4},
-    "kea":{"label":"에너지공단 참고형","primary":"#123B5D","accent":"#006B68","secondary":"#3B7E97","panel":"#EFF7F7","border":"#BCD4D8","font":"Malgun Gothic, sans-serif","radius":10},
-    "government":{"label":"정부 KRDS 참고형","primary":"#1D3155","accent":"#1D56BC","secondary":"#526D91","panel":"#EEF4FC","border":"#B9C5D6","font":"Pretendard GOV, Malgun Gothic, sans-serif","radius":6}
+    "kea":{"label":"에너지공단 참고형","primary":"#123B5D","accent":"#006B68","secondary":"#3B7E97","panel":"#EFF7F7","border":"#BCD4D8","font":"Malgun Gothic, sans-serif","radius":10}
   },
   "typography":{"body_px":16,"large_body_px":18,"table_px":14,"note_px":13,"heading_px":24,"line_height":1.7},
   "layout":{"max_width_px":1440,"panel_gap_px":24,"panel_padding_px":24,"control_min_height_px":44,"mobile_breakpoint_px":760},
@@ -26,6 +26,7 @@
     "classified_management":{"multi_select":true,"facets":11,"native_excel_slicers":10,"charts":6,"cross_table_axes":"user_selected","source_row_navigation":true,"action_filters":true,"all_categories_accessible":true,"unit":"source_rows_not_deduplicated_applications"},
     "source_coverage":{"file_grain":true,"separate_tool_and_downloaded_ors":true,"cells_and_rows_not_business_counts":true,"unavailable_visible":true}
   },
-  "innergen_web":{"basis":"이너젠·이너캐리 통합 디자인 수치 기준 v17·v22, 거버닝 규칙 v11","panel_order":["구역 표식","명사형 제목","거버닝 한 줄","본문·도표","출처 줄"],"governing":{"lines":"넓은 화면 1줄 목표, 좁은 칸·모바일은 줄바꿈 허용","grammar":"주어 + 대상 + 수치 판단, 합니다 체","source":"같은 화면의 집계값으로만 생성"},"spacing_px":{"column_gap":16,"block_gap":16,"panel_padding":24},"corner_radius_px":0,"top_rule_px":3,"table_head":"남색 바탕·흰 글자","missing_cell":"점선 테두리와 미확보 문구"},
+  "krds_web":{"basis":"KRDS 색상·타이포그래피·토큰 지침(정부24 계열) 참고형","stylesheet":"web/src/krds-public.css","typography_px":{"title":40,"panel_title":22,"body":17,"table":15,"note":14},"radius_px":{"card":12,"control":8,"dialog":16},"control_height_px":{"primary":48,"secondary":40},"kpi":"흰 카드 6개, 수치 #1E2124, 단위·범위 병기, 미확보는 점선 카드","governing":"페이지 거버닝은 연파랑 안내 상자(남색 원형 표식), 패널 거버닝은 회색 상자","table":"머리 #F4F5F6 + 남색 2px 상단선, 코드는 밑줄 링크","excel":"1~4행 남색 제목 띠, 흰 KPI 카드 + 파란 왼쪽 표식, 구역 머리 #F4F5F6 + 남색 상단선, 최초 파랑·개정 남색 그래프","no_official_marks":true},
+  "innergen_web":{"basis":"이너젠·이너캐리 통합 디자인 수치 기준 v17·v22, 거버닝 규칙 v11","status":"전환용 프로필(innergen_blue). 스타일시트 web/src/innergen-public.css와 Excel 사본 outputs/2026-10-16_innergen_backup 유지","panel_order":["구역 표식","명사형 제목","거버닝 한 줄","본문·도표","출처 줄"],"governing":{"lines":"넓은 화면 1줄 목표, 좁은 칸·모바일은 줄바꿈 허용","grammar":"주어 + 대상 + 수치 판단, 합니다 체","source":"같은 화면의 집계값으로만 생성"},"spacing_px":{"column_gap":16,"block_gap":16,"panel_padding":24},"corner_radius_px":0,"top_rule_px":3,"table_head":"남색 바탕·흰 글자","missing_cell":"점선 테두리와 미확보 문구"},
   "restrictions":["정부·공단 로고 및 공식 누리집 문구 미사용","비공개 원장 빌드·배포 금지","기관의 법적 상태·기한 자동 판단 금지"]
 }

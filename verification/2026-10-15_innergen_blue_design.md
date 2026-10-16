@@ -22,6 +22,15 @@
 
 기존 공개 Excel `통계` E7:G18은 `IF(D7>YEAR(...),"",…)`로 문자 연도("2015")와 숫자를 비교했다. 데스크톱 Excel은 문자를 모든 숫자보다 크게 보므로 재계산하면 연도표와 그래프가 빈칸이 될 수 있다. 생성 도구의 계산 엔진은 이를 숫자로 비교해 이전 검증에서 드러나지 않았다. `VALUE(D7)`로 고쳤다.
 
+## 병합·공개 배포 확인
+
+- 기능 브랜치 `feature/innergen-blue-dashboard`의 커밋 `9b16b8a`를 [PR #8](https://github.com/24josh4281/KOC_Industrial/pull/8)로 `main`에 병합했다. 병합 커밋은 `0431e0ba8980f6dfbdd7f3bcd6141562cdb1cf3e`(2026-10-15 05:55 UTC)다.
+- PR [Validate dashboard 실행](https://github.com/24josh4281/KOC_Industrial/actions/runs/38688941508) 성공. 병합 후 [main 검증 실행](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452541), [Pages 게시 실행](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452560)(build·deploy 작업), GitHub의 [pages build and deployment](https://github.com/24josh4281/KOC_Industrial/actions/runs/38689452072) 실행이 모두 성공했다.
+- PR 변경 파일 14개는 공개 웹 소스·정적 번들·`design.json`·문서·공개 Excel 3사본·검증 기록이다. 로컬 `inputs/`, `outputs/`, `local/`, 내부 원장·JSON·검토 메모·비밀키는 없다.
+- `https://24josh4281.github.io/KOC_Industrial/`은 새 번들 `index-DQKUBV5u.js`와 `index-Cr5Nx1SG.css`를 참조했고 제목 `공개 방법론의 흐름과 변화`, `.ig` 구성, 거버닝 문장 10개(첫 문장 `공개 방법론 33개 중 6개(18.2%)가 개정됐고, 최근 365일 변경은 4개 버전입니다.`)가 렌더링됐다.
+- 배포된 JS·CSS·공개 Excel은 각각 HTTP 200이며 SHA-256이 `main` 커밋의 Git 객체와 같았다(JS `d03ac62a…`, CSS `7ee2bc8b…`, Excel `2a2d7d3d…`, 40,329바이트). Windows 작업본의 JS·CSS 크기 차이는 `core.autocrlf` 줄바꿈 변환 때문이다.
+- 이 확인은 페이지 스크립트로 읽은 렌더링 결과와 파일 해시이며 공개 사이트의 실제 클릭·모바일 시각 QA는 아니다.
+
 ## 미실행·해석 한계
 
-Microsoft Excel 데스크톱에서 열어 재계산·렌더링 확인은 하지 않았다(생성 도구 렌더 이미지로만 확인). 배포된 GitHub Pages는 갱신하지 않았다(push·PR 미실행). 수치 정의·공개 데이터·내부 자료 범위는 바꾸지 않았다.
+Microsoft Excel 데스크톱에서 열어 재계산·렌더링 확인은 하지 않았다(생성 도구 렌더 이미지로만 확인). 수치 정의·공개 데이터·내부 자료 범위는 바꾸지 않았다. 작성 당시의 `GitHub Pages 미갱신(push·PR 미실행)` 기록은 위 병합·공개 배포 확인으로 대체된다.
